@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <!-- google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- google Fonts -->
+
+
+   <!-- custom css link  -->
+   <link rel="stylesheet" href="./public/style.css" />
+   <link rel="stylesheet" href="./public/responsive.css" />
+   <link rel="stylesheet" href="./public/custom.css" />
+   <!-- custom css link  -->
+  </head>
+  <body>
+   
+<!-- header area -->
+<header class="bg-white">
+    <div class="container mx-auto py-4">
+        <div class="flex justify-between items-center ">
+            <!-- logo area start -->
+            <div>
+                <a href="">
+                    <img
+                    class=""
+                    src="data:image/webp;base64,UklGRlwDAABXRUJQVlA4TFADAAAvhEAHEGfjppEkSYp5gSzmRXr+Ka3TUXDUNpIgOftcGMvl+AM6qcsg20idyvsTvcy5jWzbaQ6X+YP3UI9aUKr+U5vh718H8HwX8fvj/f0bf8QqwY2lEMCiAhwqwEUBXFSAA6iAvWSFAGm5cSlBQaEAF+NGFsAI5f6Z4Yu7CAl6eSHMc8LzZHNAMWdDnOecNyNDMWfDO1inRoZizDoHnPCcbB7mMOaE100In7fH94F6hu5/HgBBurbthSS9SSrlqqxtm2Pbto3V+R9A1/d9VbXX1P+I/jsQ2DaNbO8YVPIjIHtmdGIKjffc0PDI5DQa7vn+gcHmZ6m7t6/5WW7r7GJp8hd+//jJM47m+td3IWNorle+8gzNolFO4thJFKss/XM1QHPPWms9m+AqWSlFhrH/788WgLVvJAsAZsfGq/1YopiNw9Wxpjp8/uLl623g05ciHUJb1pKyV05HT54+a2UH6x8/F1nsWWBtWU3aubTFqxzgIs8YmxZAofWy3BoHFxpj/JxixgVXwrkya7RPVy73CbC1PtPxw0ePi7x59/4DTXuX0JaVBCAjSsXF0Ep5LYTYMZaI0FFrR7gMpcgAxGwvKaWpTu7df8DylqekLavLCVuCTCNxEig2SgeJywhcinBnAgTXzTt3pVxsbF7Kmaj4JCNPgmLG4QwZqSYjMakmLC2GEAWXl5EtExOugAHDFhOSpkbS9dtCXu2yPxUyWucjBXQkHG3NFtgqpROkUUhQDOFikBZATiA5kRF0do3n+R5QlqGZWj+ki18yxpDx8JmIKFUk9o6vlObnn8AIRIkgnLM8OazelmXyPHLShK2mNVVCydiuyx0fYiCK/IFAlEpieXgE4ODvny0h3fOoJM0ZyLYDXBiGmTA4l7s8seSQtFB8ttheiQQiXxTJvWOhLVnallBPZNs5MgIlySgVkJ/xybaPQP4sLJMhKAiVLJzduHUK3pYkK79+L6OuspKjL6258iNdSOJSrkwxIyoRM2lLHgC1hUAam/SEs6RAJDKUCLaGToW2fL31n4SE1KHvII7A+WRMdMMTLpujXORbKkiq6JbUln/w3+ycqwxTg4sRVQa6IbXlPzTXYlvuo8EuacsGW2jLZltoy6b77PrNEzTRAA=="
+                    alt=""
+                />
+                </a>
+            </div>
+            <!-- logo area end -->
+            <!-- navbar area start -->
+            <nav id="nav-menu-container" class="">
+                <ul class="nav-menu flex">
+                <li class="">
+                    <a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-red-700 transition-all duration-700 transform hover:border-b-purple-200 border-0" href="index.html">Home</a>
+                </li>
+                <li class=" ">
+                    <a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-red-700 transition-all duration-700 transform hover:border-b-purple-200 border-0" href="about.html">About</a>
+                </li>
+                <li class="relative group">
+                    <a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-red-700 transition-all duration-700 transform hover:border-b-purple-200 border-0" href="services.html">Services</a>
+                    <ul class="absolute bg-green-200 opacity-80 top-10 left-0 hidden group-hover:block w-56">
+                        <li class="p-2 border-b-2"><a href="">item 1</a></li>
+                        <li class=""><a href="">item 1</a></li>
+                        <li class=""><a href="">item 1</a></li>
+                        <li class=""><a href="">item 1</a></li>
+                    </ul>
+                </li>
+                <li><a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-red-700 transition-all duration-700 transform hover:border-b-purple-200 border-0" href="portfolio.html">Portfolio</a></li>
+                <li><a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-red-700 transition-all duration-700 transform hover:border-b-purple-200 border-0" href="price.html">Pricing</a></li>
+                <li>
+                    <a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-red-700 transition-all duration-700 transform hover:border-b-purple-200 border-0" href="">Blog</a>
+                    <!-- <ul>
+                    <li><a href="blog-home.html">Blog Home</a></li>
+                    <li><a href="blog-single.html">Blog Single</a></li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-red-700 transition-all duration-700 transform hover:border-b-purple-200 border-0" href="">Pages</a>
+                    <!-- <ul>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li class="menu-has-children"><a href="">Level 2 </a>
+                    <ul>
+                    <li><a href="#">Item One</a></li>
+                    <li><a href="#">Item Two</a></li>
+                    </ul>
+                    </li>
+                    </ul> -->
+                </li>
+                <li>
+                    <a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-red-700 transition-all duration-700 transform hover:border-b-purple-200 border-0" href="contact.html">Contact</a></li>
+                </ul>
+                </nav>
+            <!-- navbar area end -->
+
+        </div>
+
+    </div>
+
+</header>
+<!-- header area -->
+
+<!-- banner section -->
+<section class="bg-gray-100 lg:py-0">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap lg:flex-row flex-col-reverse pt-0 lg:pt-14">
+
+            <!-- left side -->
+           
+                <div class="lg:w-1/2  w-full text-center lg:text-start lg:mt-24 mt-0 mb-6">
+                    <span class="text-gray-600 uppercase text-sm font-medium">This is Me</span>
+                    <h2 class="text-[50px] text-black font-[poppins] font-bold leading-0">PHILIP GILBERT</h2>
+                    <p class="text-gray-500 text-sm">
+                      You will begin to realise why this exercise is called the
+                      Dickens Pattern with reference to the ghost showing Scrooge some
+                      different futures.
+                    </p>
+                    <br>
+                    <a
+                      href=""
+                      class="bg-gradient-to-r from-cyan-500 to-blue-500 p-2 w-[250px] px-6 text-white hover:shadow-2xl transition ease-in-out duration-500 hover:shadow-blue-900 uppercase"
+                      >Discover Me</a
+                    >
+                  </div>
+            
+            <!-- left side -->
+            <!-- right side -->
+            <div class="flex self-end lg:w-1/2 w-full right-0">
+                <img
+                  src="https://preview.colorlib.com/theme/personal/img/xhero-img.png.pagespeed.ic.INRfo5JT2o.webp"
+                  alt=""
+                  class="w-3/5 lg:w-5/6 mx-auto mb-8 lg:mb-0"
+                />
+              </div>
+            <!-- right side -->
+
+        </div>
+
+    </div>
+
+</section>
+<!-- banner section -->
+ 
+<!-- about section -->
+<section class="">
+    <div class="container mx-auto">
+      <div
+        class="flex">
+        <!-- about Logo -->
+        <div class="flex self-end lg:w-1/2 w-full">
+            <img
+              src="https://preview.colorlib.com/theme/personal/img/xabout-img.png.pagespeed.ic.1_IGXbMOtM.webp"
+              alt=""
+              class=" "
+            />
+          </div>
+        <!-- about Logo -->
+
+        <!-- about content -->
+       <div class="w-1/2 mt-10 p-10">
+        <span class="text-[16px] text-gray-500">ABOUT ME</span>
+        <h2 class="text-[40px] pb-6 font-bold pt-6 ">PERSONAL DETAILS</h2>
+        <p class="text-gray-600 pb-6 text-[14px]">
+          Here, I focus on a range of items and features that we use in
+          life without giving them a second thought. such as Coca Cola.
+          Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco.
+        </p>
+        <a
+        href="#"
+        class="p-2 w-[250px] px-6 text-white hover:shadow-xl transition ease-in-out duration-500 bg-blue-500 shadow-lg shadow-blue-500/50 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:"
+        >View Full Details</a
+      >
+       </div>
+        <!-- about content -->
+
+      </div>
+
+       <!-- service header -->
+       <div class="text-center p-10">
+        <h2
+          class="text-3xl text-black font-semibold pb-4 overflow-hidden"
+        >
+        My Offered Services
+        </h2>
+        <p class="text-gray-500 text-[14px]">
+          At about this time of year, some months after New Year’s
+          resolutions have been made and kept, or made and neglected.
+        </p>
+      </div>
+      <!-- service header -->
+      <!-- service card -->
+      <div class=" mb-20">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto overflow-hidden"
+        >
+          <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"></div> -->
+          
+          <div class="text-center p-4 service">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg>
+            </span>
+            <a
+              href=""
+              class="hover:text-indigo-500 transition ease-in-out duration-500"
+            >
+              <h4>Web Design</h4></a
+            >
+            <p class="text-gray-500 text-sm">
+              “It is not because things are difficult that we do not dare;
+              it is because we do not dare that they are difficult.”
+            </p>
+          </div>
+          <div class="text-center p-4 service">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg>
+            </span>
+            <a
+              href=""
+              class="hover:text-indigo-500 transition ease-in-out duration-500"
+            >
+              <h4>Web Design</h4></a
+            >
+            <p class="text-gray-500 text-sm">
+              “It is not because things are difficult that we do not dare;
+              it is because we do not dare that they are difficult.”
+            </p>
+          </div>
+          <div class="text-center p-4 service">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg>
+            </span>
+            <a
+              href=""
+              class="hover:text-indigo-500 transition ease-in-out duration-500"
+            >
+              <h4>Web Design</h4></a
+            >
+            <p class="text-gray-500 text-sm">
+              “It is not because things are difficult that we do not dare;
+              it is because we do not dare that they are difficult.”
+            </p>
+          </div>
+          <div class="text-center p-4 service">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg>
+            </span>
+            <a
+              href=""
+              class="hover:text-indigo-500 transition ease-in-out duration-500"
+            >
+              <h4>Web Design</h4></a
+            >
+            <p class="text-gray-500 text-sm">
+              “It is not because things are difficult that we do not dare;
+              it is because we do not dare that they are difficult.”
+            </p>
+          </div>
+          <div class="text-center p-4 service">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg>
+            </span>
+            <a
+              href=""
+              class="hover:text-indigo-500 transition ease-in-out duration-500"
+            >
+              <h4>Web Design</h4></a
+            >
+            <p class="text-gray-500 text-sm">
+              “It is not because things are difficult that we do not dare;
+              it is because we do not dare that they are difficult.”
+            </p>
+          </div>
+          <div class="text-center p-4 service">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg>
+            </span>
+            <a
+              href=""
+              class="hover:text-indigo-500 transition ease-in-out duration-500"
+            >
+              <h4>Web Design</h4></a
+            >
+            <p class="text-gray-500 text-sm">
+              “It is not because things are difficult that we do not dare;
+              it is because we do not dare that they are difficult.”
+            </p>
+          </div>
+
+          <!-- <div class="single-services text-center service">
+            <span class="lnr lnr-pie-chart">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg></span>
+            <a href="#"><h4>Web Design</h4></a>
+            <p class="text-gray-500 text-sm">
+                “It is not because things are difficult that we do not dare;
+                it is because we do not dare that they are difficult.”
+              </p>
+            </div>
+          <div class="single-services text-center service">
+            <span class="lnr lnr-pie-chart">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg></span>
+            <a href="#"><h4>Web Design</h4></a>
+            <p class="text-gray-500 text-sm">
+                “It is not because things are difficult that we do not dare;
+                it is because we do not dare that they are difficult.”
+              </p>
+            </div>
+          <div class="single-services text-center service">
+            <span class="lnr lnr-pie-chart">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-20 h-20 mx-auto"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+                />
+              </svg></span>
+            <a href="#"><h4>Web Design</h4></a>
+            <p class="text-gray-500 text-sm">
+                “It is not because things are difficult that we do not dare;
+                it is because we do not dare that they are difficult.”
+              </p>
+            </div> -->
+
+          
+
+        </div>
+      </div>
+      <!-- service card -->
+    </div>
+  </section>
+
+<!-- about section -->
+
+
+ <!-- facts Area Start -->
+ <section
+ class="bg-gradient-to-r from-cyan-500 to-blue-400 h-64"
+>
+ <div class="container mx-auto">
+   <!-- facts count -->
+   <div class="flex justify-around items-center py-24">
+     <div class="text-center ">
+       <span class="text-gray-200 font-semibold text-3xl counter"
+         >2536</span
+       >
+       <p class="text-sm text-gray-300">Projects Completed</p>
+     </div>
+     <div class="text-center" >
+       <span class="text-gray-200 font-semibold text-[40px] counter"
+         >6784</span
+       >
+       <p class="text-sm text-gray-300">Happy Clients</p>
+     </div>
+     <div class="text-center" >
+       <span class="text-gray-200 font-semibold text-[40px] counter"
+         >2239</span
+       >
+       <p class="text-sm text-gray-300">Cups of Coffee</p>
+     </div>
+     <div class="text-center" >
+       <span class="text-gray-200 font-semibold text-[40px] counter"
+         >434</span
+       >
+       <p class="text-sm text-gray-300">Real Professionals</p>
+     </div>
+   </div>
+   <!-- facts count -->
+ </div>
+</section>
+<!-- facts Area End -->
+
+  <!-- Featured Area Start -->
+  <section class="min-h-[1150px]">
+    <div class="container mx-auto pb-6">
+      <!-- feature header -->
+      <div class="text-center p-10">
+        <h2 class="text-black text-[50px] font-bold">
+          Our Latest Featured Projects
+        </h2>
+        <p>Who are in extremely love with eco friendly system.</p>
+      </div>
+      <!-- feature header -->
+      <!-- featured Menu -->
+      <div class="flex justify-center items-center mb-4">
+        <!-- fetured menu -->
+        <div class="filter p-4">
+          <!-- <a href="#" data-filter="all">All</a>
+            <a href="#" data-filter=".victor">Vector</a>
+            <a href="#" data-filter=".raster">Raster</a>
+            <a href="#" data-filter=".ui">UI/UX</a>
+            <a href="#" data-filter=".paint">Printing</a> -->
+          <button
+            class=" p-2 text-black transition-all duration-500 hover:text-indigo-700 "
+            type="button"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button
+            class="p-2 text-black transition-all duration-500 tab-menu"
+            type="button"
+            data-filter=".victor"
+          >
+            Vector
+          </button>
+          <button
+            class="p-2 text-black transition-all duration-500 tab-menu"
+            type="button"
+            data-filter=".raster"
+          >
+            Raster
+          </button>
+          <button
+            class="p-2 text-black transition-all duration-500  tab-menu"
+            type="button"
+            data-filter=".ui"
+          >
+            UI/UX
+          </button>
+          <button
+            class="p-2 text-black transition-all duration-500 tab-menu"
+            type="button"
+            data-filter=".paint"
+          >
+            Printing
+          </button>
+        </div>
+
+        <!-- <ul class="flex">
+          <li class="p-2">
+            <a
+              href="#"
+              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
+              id="all" data-filter="all"
+              >All</a
+            >
+          </li>
+          <li class="p-2">
+            <a
+              href="#"
+              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
+              id="vector" data-filter="all"
+              >Vector</a
+            >
+          </li>
+          <li class="p-2">
+            <a
+              href="#"
+              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
+              id="raster" data-filter="all"
+              >Raster</a
+            >
+          </li>
+          <li class="p-2">
+            <a
+              href="#"
+              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
+              id="uiux" data-filter="all"
+              >UI/UX</a
+            >
+          </li>
+          <li class="p-2">
+            <a
+              href="#"
+              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
+              id="printing" data-filter="printing"
+              >Printing</a
+            >
+          </li>
+        </ul> -->
+        <!-- fetured menu -->
+      </div>
+      <!-- featured Menu -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 protfolio"
+      >
+        <!-- featured cards -->
+        <div
+          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all printing transform  transition ease-in-out duration-500"
+        >
+          <div class="absolute transition ease-in-out duration-500">
+            <div class="h-[350px]">
+              <img
+                class="h-full transition duration-500"
+                src="https://randompicturegenerator.com/img/car-generator/g23fdf7279b219dc0432e07ad28f06635aaff9fb3d471e20d6b936bd5865f88f68a383fd8baac02e9d586a59b5af6c07b_640.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center bg-gray-300 pt-1">
+              <h2>2D Vinyl Design</h2>
+              <span>vector</span>
+            </div>
+          </div>
+          <!-- overly eiffects -->
+          <div
+            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
+          >
+            <div class="py-16">
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1
+                class="title-font text-lg font-medium text-blue-500 mb-3 p"
+              >
+                Shooting Stars
+              </h1>
+            </div>
+            <!-- <p class="leading-relaxed">
+              Photo booth fam kinfolk cold-pressed sriracha leggings
+              jianbing microdosing tousled waistcoat.
+            </p> -->
+          </div>
+          <!-- overly eiffects -->
+        </div>
+
+        <div
+          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all"
+        >
+          <div class="absolute transition ease-in-out duration-500">
+            <div class="h-[350px] w-full">
+                <!-- https://miro.medium.com/max/1400/1*aTYOTFS4Vkr-nwHNML3GvQ.jpeg -->
+              <img
+                class="h-full w-full transition duration-500 hover:scale-105"
+                src="https://images.unsplash.com/photo-1592610687683-41d676fcda72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+            <div class="text-center bg-gray-300 pt-1">
+              <h2>2D Vinyl Design</h2>
+              <span>vector</span>
+            </div>
+          </div>
+          <!-- overly eiffects -->
+          <div
+            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
+          >
+            <div class="py-16">
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1
+                class="title-font text-lg font-medium text-blue-500 mb-3 p"
+              >
+                Shooting Stars
+              </h1>
+            </div>
+            <!-- <p class="leading-relaxed">
+              Photo booth fam kinfolk cold-pressed sriracha leggings
+              jianbing microdosing tousled waistcoat.
+            </p> -->
+          </div>
+          <!-- overly eiffects -->
+        </div>
+        
+        <div
+          class="mix all ui relative h-[420px] overflow-hidden rounded bg-gray-300 all printing"
+        >
+          <div class="absolute transition ease-in-out duration-500">
+            <div class="h-[350px]">
+              <img
+                class="h-full transition duration-500 hover:scale-105"
+                src="https://images.unsplash.com/photo-1662574428878-6969eba0b86c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+            <div class="text-center bg-gray-300 pt-1">
+              <h2>2D Vinyl Design</h2>
+              <span>vector</span>
+            </div>
+          </div>
+          <!-- overly eiffects -->
+          <div
+            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
+          >
+            <div class="py-16">
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1
+                class="title-font text-lg font-medium text-blue-500 mb-3 p"
+              >
+                Shooting Stars
+              </h1>
+            </div>
+            <!-- <p class="leading-relaxed">
+              Photo booth fam kinfolk cold-pressed sriracha leggings
+              jianbing microdosing tousled waistcoat.
+            </p> -->
+          </div>
+          <!-- overly eiffects -->
+        </div>
+
+       
+
+        <div
+          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all"
+        >
+          <div class="absolute transition ease-in-out duration-500">
+            <div class="h-[350px]">
+              <img
+                class="h-full transition duration-500 hover:scale-105"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center bg-gray-300 pt-1">
+              <h2>2D Vinyl Design</h2>
+              <span>vector</span>
+            </div>
+          </div>
+          <!-- overly eiffects -->
+          <div
+            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
+          >
+            <div class="py-16">
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1
+                class="title-font text-lg font-medium text-blue-500 mb-3 p"
+              >
+                Shooting Stars
+              </h1>
+            </div>
+            <!-- <p class="leading-relaxed">
+              Photo booth fam kinfolk cold-pressed sriracha leggings
+              jianbing microdosing tousled waistcoat.
+            </p> -->
+          </div>
+          <!-- overly eiffects -->
+        </div>
+
+        <div
+          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all"
+        >
+          <div class="absolute transition ease-in-out duration-500">
+            <div class="h-[350px]">
+              <img
+                class="h-full transition duration-500 hover:scale-105"
+                src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Village_Road_in_Bangladesh.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center bg-gray-300 pt-1">
+              <h2>2D Vinyl Design</h2>
+              <span>vector</span>
+            </div>
+          </div>
+          <!-- overly eiffects -->
+          <div
+            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
+          >
+            <div class="py-16">
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1
+                class="title-font text-lg font-medium text-blue-500 mb-3 p"
+              >
+                Shooting Stars
+              </h1>
+            </div>
+            <!-- <p class="leading-relaxed">
+              Photo booth fam kinfolk cold-pressed sriracha leggings
+              jianbing microdosing tousled waistcoat.
+            </p> -->
+          </div>
+          <!-- overly eiffects -->
+        </div>
+      
+
+        <div
+          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all"
+        >
+          <div class="absolute transition ease-in-out duration-500">
+            <div class="h-[350px]">
+              <img
+                class="h-full transition duration-500 hover:scale-105"
+                src="https://w0.peakpx.com/wallpaper/164/520/HD-wallpaper-lake-view-bangladesh-bd-lake-mountain-natural-nature.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center bg-gray-300 pt-1">
+              <h2>2D Vinyl Design</h2>
+              <span>vector</span>
+            </div>
+          </div>
+          <!-- overly eiffects -->
+          <div
+            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
+          >
+            <div class="py-16">
+              <h2
+                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+              >
+                THE SUBTITLE
+              </h2>
+              <h1
+                class="title-font text-lg font-medium text-blue-500 mb-3 p"
+              >
+                Shooting Stars
+              </h1>
+            </div>
+            <!-- <p class="leading-relaxed">
+              Photo booth fam kinfolk cold-pressed sriracha leggings
+              jianbing microdosing tousled waistcoat.
+            </p> -->
+          </div>
+          <!-- overly eiffects -->
+        </div>
+        <!-- featured cards -->
+      </div>
+
+      <!-- all -->
+
+      <!-- all -->
+    </div>
+  </section>
+  <!-- Featured Area End -->
+
+  <!-- script  -->
+  <script src="./public/plugins/js/jquery-3.6.1.min.js"/></script>
+  <script src=".public/wow/wow.js"></script>
+    <script src="./public/mixitup.min.js"></script>
+    <script src="./public/main.js"></script>
+
+   
+
+  </body>
+</html>
+

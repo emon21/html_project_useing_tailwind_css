@@ -6,6 +6,39 @@
   z-index: 999999;
 }
 
+
+.tab-menu::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: blue;
+    transition: width .3s;
+    margin-top: 5px;
+}
+
+.tab-menu:hover::after {
+    width: 100%;
+   
+   
+}
+
+.tab-menu:hover{
+    color: #8490ff;
+}
+.mixitup-control-active{
+    color: #8490ff;
+   
+}
+
+/* .protfolio{
+    transition: all .5S;
+}
+.protfolio:hover{
+    border-bottom: 2px solid blue;
+    transform: translateX(5PX);
+} */
+
 .w-full.top-menu.scroll-header {
   position: fixed;
   left: 0;
@@ -252,10 +285,11 @@ button.slick-prev.slick-arrow {
 }
 
 @media (min-width:1200px){
-    .container{
+    .container {
         max-width: 1140px !important;
     }
 }
+
 
 /* Service */
 .service:hover{
