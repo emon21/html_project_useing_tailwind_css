@@ -92,12 +92,13 @@ $('.owl-carousel').owlCarousel({
 //slick Slider
 
 $('.responsive').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 300,
+    arrows: true,
     slidesToShow: 5,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -145,13 +146,14 @@ $('.logo-slider').slick({
 //testimonials
 
 $('.testimonial').slick({
-    dots: true,
+
+    dots: false,
     infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  arrows: true,
-  autoplay: true,
-  autoplaySpeed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
 });
 
 

@@ -32,11 +32,29 @@
     <!-- google Fonts -->
 
 
-   <!-- custom css link  -->
+   <!-- wow animation -->
+   <link rel="stylesheet" href="./public/plugins/css/animate.min.css"/>
+
+   <!-- wow animation -->
+   
+   <!-- Owl Carousel -->
+   
+   <link rel="stylesheet" href="./public/plugins/css/owl.carousel.min.css"/>
+   <link rel="stylesheet" href="./public/plugins/css/owl.theme.min.css"/>
+
+   <!-- Owl Carousel -->
+
+   <!-- slick slider -->
+
+   <!-- Add the slick-theme.css if you want default styling -->
+   <link rel="stylesheet" type="text/css" href="./public/plugins/css/slick.css"/>
+   <!-- Add the slick-theme.css if you want default styling -->
+   <link rel="stylesheet" type="text/css" href="./public/plugins/css/slick-theme.css"/>
+   
+   <!-- slick slider -->
+
    <link rel="stylesheet" href="./public/style.css" />
-   <link rel="stylesheet" href="./public/responsive.css" />
    <link rel="stylesheet" href="./public/custom.css" />
-   <!-- custom css link  -->
   </head>
   <body>
    
@@ -210,9 +228,9 @@
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                stroke-width="1.0"
                 stroke="currentColor"
-                class="w-20 h-20 mx-auto"
+                class="w-12 h-12 mx-auto"
               >
                 <path
                   stroke-linecap="round"
@@ -497,8 +515,7 @@
 
 
  <!-- facts Area Start -->
- <section
- class="bg-gradient-to-r from-cyan-500 to-blue-400 h-64"
+ <section class="bg-gradient-to-r from-cyan-500 to-blue-400 h-64"
 >
  <div class="container mx-auto">
    <!-- facts count -->
@@ -534,8 +551,8 @@
 <!-- facts Area End -->
 
   <!-- Featured Area Start -->
-  <section class="min-h-[1150px]">
-    <div class="container mx-auto pb-6">
+  <section class="">
+    <div class="container mx-auto mb-20">
       <!-- feature header -->
       <div class="text-center p-10">
         <h2 class="text-black text-[50px] font-bold">
@@ -544,344 +561,247 @@
         <p>Who are in extremely love with eco friendly system.</p>
       </div>
       <!-- feature header -->
-      <!-- featured Menu -->
-      <div class="flex justify-center items-center mb-4">
-        <!-- fetured menu -->
-        <div class="filter p-4">
-          <!-- <a href="#" data-filter="all">All</a>
-            <a href="#" data-filter=".victor">Vector</a>
-            <a href="#" data-filter=".raster">Raster</a>
-            <a href="#" data-filter=".ui">UI/UX</a>
-            <a href="#" data-filter=".paint">Printing</a> -->
-          <button
-            class=" p-2 text-black transition-all duration-500 hover:text-indigo-700 "
-            type="button"
-            data-filter="all"
-          >
-            All
-          </button>
-          <button
-            class="p-2 text-black transition-all duration-500 tab-menu"
-            type="button"
-            data-filter=".victor"
-          >
-            Vector
-          </button>
-          <button
-            class="p-2 text-black transition-all duration-500 tab-menu"
-            type="button"
-            data-filter=".raster"
-          >
-            Raster
-          </button>
-          <button
-            class="p-2 text-black transition-all duration-500  tab-menu"
-            type="button"
-            data-filter=".ui"
-          >
-            UI/UX
-          </button>
-          <button
-            class="p-2 text-black transition-all duration-500 tab-menu"
-            type="button"
-            data-filter=".paint"
-          >
-            Printing
-          </button>
-        </div>
 
-        <!-- <ul class="flex">
-          <li class="p-2">
-            <a
-              href="#"
-              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
-              id="all" data-filter="all"
-              >All</a
-            >
-          </li>
-          <li class="p-2">
-            <a
-              href="#"
-              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
-              id="vector" data-filter="all"
-              >Vector</a
-            >
-          </li>
-          <li class="p-2">
-            <a
-              href="#"
-              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
-              id="raster" data-filter="all"
-              >Raster</a
-            >
-          </li>
-          <li class="p-2">
-            <a
-              href="#"
-              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
-              id="uiux" data-filter="all"
-              >UI/UX</a
-            >
-          </li>
-          <li class="p-2">
-            <a
-              href="#"
-              class="text-indigo-900 hover:text-blue-600 transition ease-in-out duration-500"
-              id="printing" data-filter="printing"
-              >Printing</a
-            >
-          </li>
-        </ul> -->
-        <!-- fetured menu -->
+       <!-- fetured menu -->
+       <div class="flex justify-center items-center filter mb-6">
+            <button class="p-2 text-black transition-all duration-500 hover:text-indigo-700 uppercase text-[16px] font-[poppins] tab-menu" type="button"data-filter="all">all</button>
+            <button class="p-2 text-black transition-all duration-500 hover:text-indigo-700 uppercase text-[16px] font-[poppins] tab-menu" type="button"data-filter=".web_design">web design</button>
+            <button class="p-2 text-black transition-all duration-500 hover:text-indigo-700 uppercase text-[16px] font-[poppins] tab-menu" type="button"data-filter=".ui_ux">ui/ux</button>
+            <button class="p-2 text-black transition-all duration-500 hover:text-indigo-700 uppercase text-[16px] font-[poppins] tab-menu" type="button"data-filter=".web_dev">web development</button>
+            <button class="p-2 text-black transition-all duration-500 hover:text-indigo-700 uppercase text-[16px] font-[poppins] tab-menu" type="button"data-filter=".apps">apps</button>
       </div>
-      <!-- featured Menu -->
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 protfolio"
-      >
+      <!-- fetured menu -->
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 protfolio">
         <!-- featured cards -->
-        <div
-          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all printing transform  transition ease-in-out duration-500"
-        >
-          <div class="absolute transition ease-in-out duration-500">
-            <div class="h-[350px]">
-              <img
-                class="h-full transition duration-500"
-                src="https://randompicturegenerator.com/img/car-generator/g23fdf7279b219dc0432e07ad28f06635aaff9fb3d471e20d6b936bd5865f88f68a383fd8baac02e9d586a59b5af6c07b_640.jpg"
-                alt=""
-              />
-            </div>
-            <div class="text-center bg-gray-300 pt-1">
-              <h2>2D Vinyl Design</h2>
-              <span>vector</span>
-            </div>
-          </div>
-          <!-- overly eiffects -->
-          <div
-            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
-          >
-            <div class="py-16">
-              <h2
-                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
-              >
-                THE SUBTITLE
-              </h2>
-              <h1
-                class="title-font text-lg font-medium text-blue-500 mb-3 p"
-              >
-                Shooting Stars
-              </h1>
-            </div>
-            <!-- <p class="leading-relaxed">
-              Photo booth fam kinfolk cold-pressed sriracha leggings
-              jianbing microdosing tousled waistcoat.
-            </p> -->
-          </div>
-          <!-- overly eiffects -->
-        </div>
+      
+       <!-- web desgin -->
 
-        <div
-          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all"
-        >
-          <div class="absolute transition ease-in-out duration-500">
-            <div class="h-[350px] w-full">
-                <!-- https://miro.medium.com/max/1400/1*aTYOTFS4Vkr-nwHNML3GvQ.jpeg -->
-              <img
-                class="h-full w-full transition duration-500 hover:scale-105"
-                src="https://images.unsplash.com/photo-1592610687683-41d676fcda72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-            </div>
-            <div class="text-center bg-gray-300 pt-1">
-              <h2>2D Vinyl Design</h2>
-              <span>vector</span>
-            </div>
-          </div>
-          <!-- overly eiffects -->
-          <div
-            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
-          >
-            <div class="py-16">
-              <h2
-                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
-              >
-                THE SUBTITLE
-              </h2>
-              <h1
-                class="title-font text-lg font-medium text-blue-500 mb-3 p"
-              >
-                Shooting Stars
-              </h1>
-            </div>
-            <!-- <p class="leading-relaxed">
-              Photo booth fam kinfolk cold-pressed sriracha leggings
-              jianbing microdosing tousled waistcoat.
-            </p> -->
-          </div>
-          <!-- overly eiffects -->
-        </div>
-        
-        <div
-          class="mix all ui relative h-[420px] overflow-hidden rounded bg-gray-300 all printing"
-        >
-          <div class="absolute transition ease-in-out duration-500">
-            <div class="h-[350px]">
-              <img
-                class="h-full transition duration-500 hover:scale-105"
-                src="https://images.unsplash.com/photo-1662574428878-6969eba0b86c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-            </div>
-            <div class="text-center bg-gray-300 pt-1">
-              <h2>2D Vinyl Design</h2>
-              <span>vector</span>
-            </div>
-          </div>
-          <!-- overly eiffects -->
-          <div
-            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
-          >
-            <div class="py-16">
-              <h2
-                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
-              >
-                THE SUBTITLE
-              </h2>
-              <h1
-                class="title-font text-lg font-medium text-blue-500 mb-3 p"
-              >
-                Shooting Stars
-              </h1>
-            </div>
-            <!-- <p class="leading-relaxed">
-              Photo booth fam kinfolk cold-pressed sriracha leggings
-              jianbing microdosing tousled waistcoat.
-            </p> -->
-          </div>
-          <!-- overly eiffects -->
-        </div>
+                 <!-- single protfolio -->
+                 <div class="mix all web_design overflow-hidden ">
 
-       
+                    <div class="relative overflow-hidden rounded">
 
-        <div
-          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all"
-        >
-          <div class="absolute transition ease-in-out duration-500">
-            <div class="h-[350px]">
-              <img
-                class="h-full transition duration-500 hover:scale-105"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg"
-                alt=""
-              />
-            </div>
-            <div class="text-center bg-gray-300 pt-1">
-              <h2>2D Vinyl Design</h2>
-              <span>vector</span>
-            </div>
-          </div>
-          <!-- overly eiffects -->
-          <div
-            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
-          >
-            <div class="py-16">
-              <h2
-                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
-              >
-                THE SUBTITLE
-              </h2>
-              <h1
-                class="title-font text-lg font-medium text-blue-500 mb-3 p"
-              >
-                Shooting Stars
-              </h1>
-            </div>
-            <!-- <p class="leading-relaxed">
-              Photo booth fam kinfolk cold-pressed sriracha leggings
-              jianbing microdosing tousled waistcoat.
-            </p> -->
-          </div>
-          <!-- overly eiffects -->
-        </div>
+                        <!-- thumbnil image start-->
+                            <div class="h-[350px]">
+                                <img class="h-full object-cover bg-cover transition duration-500" src="hd_img/1.jpg"
+                                alt=""/>
+                            </div>
 
-        <div
-          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all"
-        >
-          <div class="absolute transition ease-in-out duration-500">
-            <div class="h-[350px]">
-              <img
-                class="h-full transition duration-500 hover:scale-105"
-                src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Village_Road_in_Bangladesh.jpg"
-                alt=""
-              />
-            </div>
-            <div class="text-center bg-gray-300 pt-1">
-              <h2>2D Vinyl Design</h2>
-              <span>vector</span>
-            </div>
-          </div>
-          <!-- overly eiffects -->
-          <div
-            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
-          >
-            <div class="py-16">
-              <h2
-                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
-              >
-                THE SUBTITLE
-              </h2>
-              <h1
-                class="title-font text-lg font-medium text-blue-500 mb-3 p"
-              >
-                Shooting Stars
-              </h1>
-            </div>
-            <!-- <p class="leading-relaxed">
-              Photo booth fam kinfolk cold-pressed sriracha leggings
-              jianbing microdosing tousled waistcoat.
-            </p> -->
-          </div>
-          <!-- overly eiffects -->
-        </div>
+                         <!-- thumbnil image end-->
+
+
+                         <!-- content -->
+                        <div class="text-center pt-1">
+                            <h2 class="font-semibold">2D Vinyl Design</h2>
+                            <span class="text-gray-500">vector</span>
+                            </div>
+                        <!-- content -->
+
+                        <!-- overly eiffects -->
+                        <div class="absolute top-0 left-0 right-0 h-[350px] bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+                            <div class="py-16">
+                                <span>
+                                    <svg class="text-white w-10 h-10 mx-auto pt-2 flex mt-10 items-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- overly eiffects -->
+                   
+                    </div>
+    
+                   
+
+                    
+
+                    </div>
+                <!-- single protfolio --> 
+    
+                <!-- single protfolio -->
+                    <div class="mix all ui_ux web_design overflow-hidden">
+    
+                    <div class="relative overflow-hidden rounded h-[350px]">
+                    <!-- image -->
+                    <div class="absolute">
+                    <img class="h-[350px] object-cover bg-cover transition duration-500 hover:scale-105" src="hd_img/2.jpg"
+                    alt=""/>
+                    </div>
+                    <!-- image -->
+    
+                    <!-- overly eiffects -->
+                    <div class="h-full bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+                    <div class="py-16">
+                        <span>
+                            <svg class="text-white w-10 h-10 mx-auto pt-2 flex mt-10 items-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    </div>
+                    <!-- overly eiffects -->
+                    </div>
+    
+                    <!-- content -->
+                    <div class="text-center pt-1">
+                    <h2>2D Vinyl Design</h2>
+                    <span>vector</span>
+                    </div>
+                    <!-- content -->
+    
+                    </div>
+                <!-- single protfolio -->
+    
+                <!-- single protfolio -->
+                    <div class="mix all web_dev overflow-hidden">
+    
+                    <div class="relative overflow-hidden rounded h-[350px]">
+                    <!-- image -->
+                    <div class="absolute">
+                    <img class="h-[350px] object-cover bg-cover transition duration-500 hover:scale-105" src="hd_img/3.jpg"
+                    alt=""/>
+                    </div>
+                    <!-- image -->
+    
+                    <!-- overly eiffects -->
+                    <div class="h-full bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+                    <div class="py-16">
+                        <span>
+                            <svg class="text-white w-10 h-10 mx-auto pt-2 flex mt-10 items-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    </div>
+                    <!-- overly eiffects -->
+                    </div>
+    
+                    <!-- content -->
+                    <div class="text-center pt-1">
+                    <h2>2D Vinyl Design</h2>
+                    <span>vector</span>
+                    </div>
+                    <!-- content -->
+    
+                    </div>
+                <!-- single protfolio -->
+    
+                <!-- single protfolio -->
+                    <div class="mix all apps overflow-hidden">
+                    <div class="relative overflow-hidden rounded h-[350px]">
+                    <!-- image -->
+                    <div class="absolute">
+                    <img class="h-[350px] object-cover bg-cover transition duration-500 hover:scale-105" src="https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?w=2000"
+                    alt=""/>
+                    </div>
+                    <!-- image -->
+    
+                    <!-- overly eiffects -->
+                    <div class="h-full bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+                    <div class="py-16">
+                        <span>
+                            <svg class="text-white w-10 h-10 mx-auto pt-2 flex mt-10 items-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    </div>
+                    <!-- overly eiffects -->
+                    </div>
+    
+                    <!-- content -->
+                    <div class="text-center pt-1">
+                    <h2>2D Vinyl Design</h2>
+                    <span>vector</span>
+                    </div>
+                    <!-- content -->
+                    </div>
+                <!-- single protfolio -->
+    
+                <!-- single protfolio -->
+                    <div class="mix all ui_ux overflow-hidden">
+    
+                    <div class="relative overflow-hidden rounded h-[350px]">
+                    <!-- image -->
+                    <div class="absolute">
+                    <img class="h-[350px] object-cover bg-cover transition duration-500" src="hd_img/4.jpg"
+                    alt=""/>
+                    </div>
+                    <!-- image -->
+    
+                    <!-- overly eiffects -->
+                    <div class="h-full bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+                    <div class="py-16">
+                        <span>
+                            <svg class="text-white w-10 h-10 mx-auto pt-2 flex mt-10 items-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    </div>
+                    <!-- overly eiffects -->
+                    </div>
+    
+                    <!-- content -->
+                    <div class="text-center pt-1">
+                    <h2>2D Vinyl Design</h2>
+                    <span>vector</span>
+                    </div>
+                    <!-- content -->
+    
+                    </div>
+                <!-- single protfolio -->
+    
+                <!-- single protfolio -->
+                    <div class="mix all web_dev overflow-hidden">
+    
+                    <div class="relative overflow-hidden rounded h-[350px]">
+                    <!-- image -->
+                    <div class="absolute">
+                    <img class="h-[350px] w-full object-cover bg-cover transition duration-500" src="https://www.founderjar.com/wp-content/uploads/2021/03/Best-Website-Designs.jpg"
+                    alt=""/>
+                    </div>
+                    <!-- image -->
+    
+                    <!-- overly eiffects -->
+                    <div class="h-full bg-gradient-to-r from-[#8490ff] to-[#62bdfc] opacity-0 hover:opacity-90 transition duration-500 cursor-pointer text-center">
+                    <div class="py-16">
+                        <span>
+                            <svg class="text-white w-10 h-10 mx-auto pt-2 flex mt-10 items-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </span>
+                    </div>
+                    </div>
+                    <!-- overly eiffects -->
+                    </div>
+    
+                    <!-- content -->
+                    <div class="text-center pt-1">
+                    <h2>2D Vinyl Design</h2>
+                    <span>vector</span>
+                    </div>
+                    <!-- content -->
+    
+                    </div>
+                <!-- single protfolio -->
+
+       <!-- web desgin -->
+
       
 
-        <div
-          class="mix all victor relative h-[420px] overflow-hidden rounded bg-gray-300 all"
-        >
-          <div class="absolute transition ease-in-out duration-500">
-            <div class="h-[350px]">
-              <img
-                class="h-full transition duration-500 hover:scale-105"
-                src="https://w0.peakpx.com/wallpaper/164/520/HD-wallpaper-lake-view-bangladesh-bd-lake-mountain-natural-nature.jpg"
-                alt=""
-              />
-            </div>
-            <div class="text-center bg-gray-300 pt-1">
-              <h2>2D Vinyl Design</h2>
-              <span>vector</span>
-            </div>
-          </div>
-          <!-- overly eiffects -->
-          <div
-            class="h-[350px] p-10 z-10 border-4 border-red-700 after:border-b-0 bg-gray-800 opacity-0 hover:opacity-90 transform hover:scale-100 transition duration-500 cursor-pointer text-center"
-          >
-            <div class="py-16">
-              <h2
-                class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
-              >
-                THE SUBTITLE
-              </h2>
-              <h1
-                class="title-font text-lg font-medium text-blue-500 mb-3 p"
-              >
-                Shooting Stars
-              </h1>
-            </div>
-            <!-- <p class="leading-relaxed">
-              Photo booth fam kinfolk cold-pressed sriracha leggings
-              jianbing microdosing tousled waistcoat.
-            </p> -->
-          </div>
-          <!-- overly eiffects -->
-        </div>
+      
+
+     
+
+
         <!-- featured cards -->
       </div>
 
@@ -892,13 +812,350 @@
   </section>
   <!-- Featured Area End -->
 
+  <!-- client area start -->
+  <section class="bg-[#f9f9ff]">
+    <div class="container mx-auto">
+    <!-- client header -->
+    <div class="text-center p-10">
+        <h2 class="text-black text-[50px] pb-2">
+        Client’s Feedback About Me
+        </h2>
+        <hr
+        class="w-1/12 mx-auto mb-4 border-blue-600 border-b-2 bg-gray-900"
+        />
+        <p class="text-gray-600 text-sm">
+        It is very easy to start smoking but it is an uphill task to quit
+        it. Ask any chain smoker or even a person.
+        </p>
+        </div>
+    <!-- client header -->
+
+        
+<div class="testimonial pt-10 pb-10">
+             <!-- client slider itmes -->
+             
+            
+             <div class="item flex mr-4">
+                <div class="p-6 bg-white  flex gap-4">
+                    <div class="client_img">
+                        <img
+                          src="img/02.jpg"
+                          alt=""
+                          class="rounded-full"
+                        />
+                      </div>
+    
+                      <div class="-mt-2">
+                         
+                        <p class=" text-gray-400 text-[14px]">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Ipsam excepturi eos illo necessitatibus aliquid, sed
+                          facere libero? Tempora pariatur saepe alias natus! Laborum
+                          voluptatem deleniti dolorum labore atque. Sequi, odit!
+                        </p>
+                        <a
+                          href=""
+                          class="hover:text-indigo-600 text-black text-[25px] block"
+                        >
+                        <h2 class="font-semibold text-gray-800 hover:text-indigo-600">Hasibur Rahman</h2>
+                        </a>
+                        <span class="text-justify text-gray-500 text-sm">Web Developer</span>
+                      </div>
+                </div>
+              </div>
+             <div class="item flex mr-4">
+                <div class="p-6 bg-white  flex gap-4">
+                    <div class="client_img">
+                        <img
+                          src="img/02.jpg"
+                          alt=""
+                          class="rounded-full"
+                        />
+                      </div>
+    
+                      <div class="-mt-2">
+                         
+                        <p class=" text-gray-400 text-[14px]">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Ipsam excepturi eos illo necessitatibus aliquid, sed
+                          facere libero? Tempora pariatur saepe alias natus! Laborum
+                          voluptatem deleniti dolorum labore atque. Sequi, odit!
+                        </p>
+                        <a
+                          href=""
+                          class="hover:text-indigo-600 text-black text-[25px] block"
+                        >
+                        <h2 class="font-semibold text-gray-800 hover:text-indigo-600">Hasibur Rahman</h2>
+                        </a>
+                        <span class="text-justify text-gray-500 text-sm">Web Developer</span>
+                      </div>
+                </div>
+              </div>
+             <div class="item flex mr-4">
+                <div class="p-6 bg-white  flex gap-4">
+                    <div class="client_img">
+                        <img
+                          src="img/02.jpg"
+                          alt=""
+                          class="rounded-full"
+                        />
+                      </div>
+    
+                      <div class="-mt-2">
+                         
+                        <p class=" text-gray-400 text-[14px]">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Ipsam excepturi eos illo necessitatibus aliquid, sed
+                          facere libero? Tempora pariatur saepe alias natus! Laborum
+                          voluptatem deleniti dolorum labore atque. Sequi, odit!
+                        </p>
+                        <a
+                          href=""
+                          class="hover:text-indigo-600 text-black text-[25px] block"
+                        >
+                        <h2 class="font-semibold text-gray-800 hover:text-indigo-600">Hasibur Rahman</h2>
+                        </a>
+                        <span class="text-justify text-gray-500 text-sm">Web Developer</span>
+                      </div>
+                </div>
+              </div>
+             <div class="item flex mr-4">
+                <div class="p-6 bg-white  flex gap-4">
+                    <div class="client_img">
+                        <img
+                          src="img/02.jpg"
+                          alt=""
+                          class="rounded-full"
+                        />
+                      </div>
+    
+                      <div class="-mt-2">
+                         
+                        <p class=" text-gray-400 text-[14px]">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Ipsam excepturi eos illo necessitatibus aliquid, sed
+                          facere libero? Tempora pariatur saepe alias natus! Laborum
+                          voluptatem deleniti dolorum labore atque. Sequi, odit!
+                        </p>
+                        <a
+                          href=""
+                          class="hover:text-indigo-600 text-black text-[25px] block"
+                        >
+                        <h2 class="font-semibold text-gray-800 hover:text-indigo-600">Hasibur Rahman</h2>
+                        </a>
+                        <span class="text-justify text-gray-500 text-sm">Web Developer</span>
+                      </div>
+                </div>
+              </div>
+
+        </div>
+
+    </div>
+
+  </section>
+  <!-- client area end -->
+
+  <!-- blog area start -->
+    <section class="bg-[#f9f9ff] p-[120px]">
+        <div class="container mx-auto ">
+
+            <div class="text-center p-6">
+                <h2 class="text-[35px] pb-4 font-semibold">Latest Posts From Our Blog</h2>
+                <p class="text-sm font-serif text-gray-500">
+                  You may be a skillful, effective employer but if you don’t trust
+                  your personnel and the opposite, then the chances of improving and
+                  expanding the business
+                </p>
+              </div>
+         
+          <!-- Post Area start -->
+
+          <div class="">
+
+          </div>
+          
+          <!-- Post Area End -->
+        </div>
+      </section>
+  <!-- blog area end -->
+
+  
+      <!-- Partner Logo Area Start -->
+      <section class="bg-indigo-500 p-20">
+        <div class="container mx-auto">
+            <div>
+                <div class="flex justify-center gap-6 responsive">
+                    <a href="">
+                        <img class="opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105"
+                src="https://preview.colorlib.com/theme/personal/img/xl2.png.pagespeed.ic.xlIPHLEBLj.webp"
+                alt=""
+              />
+                    </a>
+                    <a href="">
+                        <img class="opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105"
+                    src="https://preview.colorlib.com/theme/personal/img/xl4.png.pagespeed.ic.YfyS4yjs4I.webp"
+                    alt=""
+                    />
+                    </a>
+                    <a href="">
+                        <img class="opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105"
+                    src="https://preview.colorlib.com/theme/personal/img/xl5.png.pagespeed.ic.Xdg_M3EgpT.webp"
+                    alt=""
+                    />
+                    </a>
+                    <a href="">
+                        <img class="opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105"
+                    src="https://preview.colorlib.com/theme/personal/img/xl1.png.pagespeed.ic.UWsXVllptP.webp"
+                    alt=""
+                    />
+                    </a>
+                    <a href="">
+                        <img class="opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105"
+                    src="https://preview.colorlib.com/theme/personal/img/xl3.png.pagespeed.ic.b3-fSmJvq6.webp"
+                    alt=""
+                    />
+                    </a>
+                    <a href="">
+                        <img class="opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105"
+                    src="https://preview.colorlib.com/theme/personal/img/xl2.png.pagespeed.ic.xlIPHLEBLj.webp"
+                    alt=""
+                    />
+                    </a>
+                    <a href="">
+                        <img class="opacity-30 hover:opacity-100 transition-all duration-500  hover:scale-105"
+                    src="https://preview.colorlib.com/theme/personal/img/xl2.png.pagespeed.ic.xlIPHLEBLj.webp"
+                    alt=""
+                    />
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Partner Logo Area End -->
+
+       <!-- Footer Area Start -->
+       <section class="bg-[#04091E] p-[120px]">
+
+        <div class="container mx-auto">
+            <div class="flex gap-4">
+               <!-- single footer item -->
+               <div class="w-5/12">
+                <span class="text-lg text-white">About Me</span>
+                <p class="text-gray-600 text-sm pt-4">
+                  We have tested a number of registry fix and clean utilities and
+                  present our top 3 list on our site for your convenience.
+                </p>
+                <p class="text-gray-600 pt-4 text-[16px]">
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script>
+                     All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a class="text-indigo-600" href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+            </div>
+               <!-- single footer item -->
+                <div class="w-5/12">
+                    <span class="text-lg text-white pb-4">Newsletter</span>
+        <p class="text-gray-600 text-sm pt-4">
+          Stay updated with our latest trends
+        </p>
+        <form action="" class="flex mt-4">
+          <input
+            type="text"
+            placeholder="Enter Email Address"
+            class="px-4 py-2 w-80 focus:outline-none focus:ring focus:ring-violet-300 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600"
+          />
+          <span class="bg-indigo-600 w-10 p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 text-sm"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </span>
+        </form>
+                </div>
+                <div class="w-2/12">
+                    <span class="text-gray-100 text-lg">Follow Me</span>
+        <p class="text-gray-600 pt-4">Let us be social</p>
+        <div class="overflow-hidden pt-2 flex items-center ">
+          <a
+            href=""
+            class="text-white hover:text-indigo-600 transition-all duration-500 h-10 w-10 text-center py-2"
+          >
+            <i class="fa-brands fa-facebook-f text-[16px]"></i>
+          </a>
+          <a
+            href=""
+            class="text-white hover:text-indigo-600 transition-all duration-500 h-10 w-10 text-center py-2"
+          >
+            <i class="fa-brands fa-twitter text-[16px]"></i>
+          </a>
+          <a
+            href=""
+            class="text-white hover:text-indigo-600 transition-all duration-500 h-10 w-10 text-center py-2"
+          >
+            <i class="fa-brands fa-dribbble text-[16px]"></i>
+          </a>
+          <a
+            href=""
+            class="text-white hover:text-indigo-600 transition-all duration-500 h-10 w-10 text-center py-2"
+          >
+            <i class="fa-brands fa-behance text-[16px]"></i>
+          </a>
+        </div>
+                </div>
+            </div>
+        </div>
+        
+      </section>
+      <!-- Footer Area End -->
+
+
   <!-- script  -->
   <script src="./public/plugins/js/jquery-3.6.1.min.js"/></script>
-  <script src=".public/wow/wow.js"></script>
+  <script src="./public/plugins/js/waypoints.min.js"></script>
+  <script src="./public/plugins/js/jquery.counterup.min.js"/></script>
+  
+  <!-- owl carosual -->
+  <script src="./public/plugins/js/owl.carousel.min.js"/></script>
+  <!-- owl carosual -->
+  
+  <!-- slick slider -->
+  <script type="text/javascript" src="./public/plugins/js/slick.min.js"></script>	
+  <!-- slick slider -->
+  
+    <script src=".public/wow/wow.js"></script>
     <script src="./public/mixitup.min.js"></script>
     <script src="./public/main.js"></script>
-
+  
+    <script>
+        $(document).ready(function(){
+            $('li').on('click',function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
    
+
+    <script>
+        $(document).ready(function(){
+            $('li').on('click',function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+   
+  <!-- script  -->
+  
 
   </body>
 </html>
