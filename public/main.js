@@ -92,7 +92,7 @@ $('.owl-carousel').owlCarousel({
 //slick Slider
 
 $('.responsive').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     arrows: true,
