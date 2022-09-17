@@ -1,3 +1,110 @@
+/* header area start */
+/* header area end */
+
+/* banner area start */
+/* banner area end */
+
+/* about area start */
+/* about area end */
+
+/* services area start */
+/* services area end */
+
+/* counter area start */
+/* counter area end */
+
+/* protfolio area start */
+/* protfolio area end */
+
+/* client area start */
+
+.testimonial button.slick-next.slick-arrow {
+    background: #fff;
+    color: #0c0c0c;
+    padding: 5px;
+    width: 45px;
+    height: 40px;
+    top: 60px;
+    right: -29px;
+    margin-top: 50px;
+    rotate: 90deg;
+    text-align: center;
+    box-shadow: 0px 0px 4px 2px azure;
+    transition: all .3s;
+    font-weight: 800;
+    box-shadow: -14.142px 14.142px 20px 0px rgb(157 157 157 / 20%);
+}
+
+
+
+.testimonial button.slick-next.slick-arrow:hover{
+    background: #8490ff;
+    color: #fff;
+}
+
+
+.testimonial button.slick-prev.slick-arrow {
+    background: #fff;
+    color: #0c0c0c;
+    padding: 5px;
+    width: 45px;
+    height: 40px;
+    left: 1125px;
+    top: 0px;
+    margin-top: 60px;
+    rotate: 90deg;
+    text-align: center;
+    box-shadow: 0px 0px 4px 2px azure;
+    transition: all .3s;
+}
+
+
+
+.testimonial button.slick-prev.slick-arrow:hover{
+    background-color: #8490ff;
+    color: #FFF;
+}
+
+/* client area end */
+
+/* plan area start */
+/* plan area end */
+
+/* blog area start */
+/* blog area end */
+
+/* partner area start */
+/* partner area end */
+
+/* footer area start */
+/* footer area end */
+
+
+.section-gap {
+    padding: 120px 0;
+}
+
+
+.nav-menu li.active {
+    /* background: rgb(243, 240, 240); */
+    color: blue;
+}
+
+/* a.menu.active {
+    background: blue;
+    color: aliceblue;
+    padding: 10px;
+} */
+
+.timeline ul li {
+    background: #f9f9ff;
+    position: relative;
+    margin: 0 auto;
+    width: 2px;
+    padding-bottom: 40px;
+    list-style-type: none;
+}
+
 .w-full.top-menu.bg-blue-500.border-b-2.border-b-slate-300 {
     position: fixed;
     left: 0;
@@ -66,20 +173,23 @@
     position: fixed;
     left: 0;
     right: 0;
-    border-bottom: 2px solid red;
-    background-color: blue;
+    /* border-bottom: 2px solid red; */
+   
     top: 0;
     transition: 0.5s;
     color: aliceblue;
-  }
+    z-index: 1000;
+    transition: all 0.5s;
+    box-shadow: -21.213px 21.213px 30px 0px rgb(158 158 158 / 30%);
+}
   
-  .top-menu.scroll-header a {
+  /* .top-menu.scroll-header a {
     color: #dacbe9;
     background: transparent;
     border: 2px solid #999;
     border-radius: 5px;
     transition: 0.5s;
-  }
+  } */
   
   .w-full.h-\[650px\].bg-no-repeat.bg-center.bg-cover.object-fill {
     background-size: contain;
@@ -183,53 +293,7 @@
       color:#ff5722;
   }
   
-  /* client area */
   
-  
-  
-  .testimonial button.slick-next.slick-arrow {
-      background: #fff;
-      color: #0c0c0c;
-      padding: 5px;
-      width: 45px;
-      height: 40px;
-      top: 100px;
-      right: -31px;
-      margin-top: 50px;
-      rotate: 90deg;
-      text-align: center;
-      box-shadow: 0px 0px 4px 2px azure;
-      transition: all .3s;
-      font-weight: 800;
-      box-shadow: -14.142px 14.142px 20px 0px rgb(157 157 157 / 20%);
-  }
-  
-  .testimonial button.slick-next.slick-arrow:hover{
-      background: #8490ff;
-      color: #fff;
-  }
-  
-  .testimonial button.slick-prev.slick-arrow {
-      background: #fff;
-      color: #0c0c0c;
-      padding: 5px;
-      width: 45px;
-      height: 40px;
-      left: 1125px;
-      top: 40px;
-      margin-top: 60px;
-      rotate: 90deg;
-      text-align: center;
-      box-shadow: 0px 0px 4px 2px azure;
-      transition: all .3s;
-  }
-  
-  .testimonial button.slick-prev.slick-arrow:hover{
-      background-color: #8490ff;
-      color: #FFF;
-  }
-  
-  /* client area */
   
   
   .slick-dots li button:before {
@@ -255,6 +319,51 @@
   }
   
   
+
+
+/* plan section */
+
+.price-plan:hover {
+    background: -webkit-linear-gradient(0deg,#8490FF 0%,#62BDFC 100%);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.price-plan:hover h2{
+  color: #fff;
+}
+.price-plan:hover p{
+  color: #fff;
+}
+
+.price-plan ul li {
+
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.price-plan:hover ul li{
+    color: #fff;
+    border-top:1px solid #fff; 
+}
+
+.price-plan ul li:last-child {
+    border-bottom: 1px solid #eee;
+}
+
+.price-plan:hover .price-btn{
+    display: block !important;
+    color: #000 !important;
+}
+.price-plan:hover .price-rate{
+    display: none !important;
+}
+.price-plan:hover .number{
+    border-color: #ffffff36 !important;
+}
+
+/* plan section */
+
   /* Service */
   .service:hover{
       background-color: transparent;
@@ -284,11 +393,7 @@
       color: blue;
       
       }
-  .nav-menu li.active{
-  /* background: rgb(243, 240, 240); */
-  color: blue;
-  
-  }
+    
 
   .single_post:hover h2{
     color: blue;

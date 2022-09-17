@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome -->
+   
+    <!-- google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+    <!-- google Fonts -->
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <!-- icons -->
+
+
+   <!-- wow animation -->
+   <link rel="stylesheet" href="./public/plugins/css/animate.min.css"/>
+
+   <!-- wow animation -->
+   
+   <!-- Owl Carousel -->
+   
+   <link rel="stylesheet" href="./public/plugins/css/owl.carousel.min.css"/>
+   <link rel="stylesheet" href="./public/plugins/css/owl.theme.min.css"/>
+
+   <!-- Owl Carousel -->
+
+   <!-- slick slider -->
+
+   <!-- Add the slick-theme.css if you want default styling -->
+   <link rel="stylesheet" type="text/css" href="./public/plugins/css/slick.css"/>
+   <!-- Add the slick-theme.css if you want default styling -->
+   <link rel="stylesheet" type="text/css" href="./public/plugins/css/slick-theme.css"/>
+   
+   <!-- slick slider -->
+
+   <link rel="stylesheet" href="./public/style.css" />
+   <link rel="stylesheet" href="./public/custom.css" />
+  </head>
+  <body data-spy="scroll" data-target=".nav" data-offset="50" id="home">
+   
+<!-- header area -->
+<header class="bg-white top-menu">
+    <div class="container mx-auto py-4">
+        <div class="flex justify-between items-center ">
+            <!-- logo area start -->
+            <div>
+                <a href="">
+                    <img
+                    class=""
+                    src="data:image/webp;base64,UklGRlwDAABXRUJQVlA4TFADAAAvhEAHEGfjppEkSYp5gSzmRXr+Ka3TUXDUNpIgOftcGMvl+AM6qcsg20idyvsTvcy5jWzbaQ6X+YP3UI9aUKr+U5vh718H8HwX8fvj/f0bf8QqwY2lEMCiAhwqwEUBXFSAA6iAvWSFAGm5cSlBQaEAF+NGFsAI5f6Z4Yu7CAl6eSHMc8LzZHNAMWdDnOecNyNDMWfDO1inRoZizDoHnPCcbB7mMOaE100In7fH94F6hu5/HgBBurbthSS9SSrlqqxtm2Pbto3V+R9A1/d9VbXX1P+I/jsQ2DaNbO8YVPIjIHtmdGIKjffc0PDI5DQa7vn+gcHmZ6m7t6/5WW7r7GJp8hd+//jJM47m+td3IWNorle+8gzNolFO4thJFKss/XM1QHPPWms9m+AqWSlFhrH/788WgLVvJAsAZsfGq/1YopiNw9Wxpjp8/uLl623g05ciHUJb1pKyV05HT54+a2UH6x8/F1nsWWBtWU3aubTFqxzgIs8YmxZAofWy3BoHFxpj/JxixgVXwrkya7RPVy73CbC1PtPxw0ePi7x59/4DTXuX0JaVBCAjSsXF0Ep5LYTYMZaI0FFrR7gMpcgAxGwvKaWpTu7df8DylqekLavLCVuCTCNxEig2SgeJywhcinBnAgTXzTt3pVxsbF7Kmaj4JCNPgmLG4QwZqSYjMakmLC2GEAWXl5EtExOugAHDFhOSpkbS9dtCXu2yPxUyWucjBXQkHG3NFtgqpROkUUhQDOFikBZATiA5kRF0do3n+R5QlqGZWj+ki18yxpDx8JmIKFUk9o6vlObnn8AIRIkgnLM8OazelmXyPHLShK2mNVVCydiuyx0fYiCK/IFAlEpieXgE4ODvny0h3fOoJM0ZyLYDXBiGmTA4l7s8seSQtFB8ttheiQQiXxTJvWOhLVnallBPZNs5MgIlySgVkJ/xybaPQP4sLJMhKAiVLJzduHUK3pYkK79+L6OuspKjL6258iNdSOJSrkwxIyoRM2lLHgC1hUAam/SEs6RAJDKUCLaGToW2fL31n4SE1KHvII7A+WRMdMMTLpujXORbKkiq6JbUln/w3+ycqwxTg4sRVQa6IbXlPzTXYlvuo8EuacsGW2jLZltoy6b77PrNEzTRAA=="
+                    alt=""
+                />
+                </a>
+            </div>
+            <!-- logo area end -->
+            <!-- navbar area start -->
+            <!-- <nav id="nav-menu-container" class="nav"> -->
+            <nav id="nav-menu" class="nav">
+                <ul class="nav-menu flex">
+
+                <li class="px-2.5  block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0 active">
+                    <a class="" href="home.html">Home</a>
+                    <!-- <a class="px-2.5 block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0" href="#about">About</a> -->
+                </li>
+
+                <!-- <li class="py-6 px-2 uppercase text-[12px]  hover:text-[#2336e6] duration-500 transition ease-in-out active">
+                    <a href="#" class="">home</a>
+                </li> -->
+                <li class="px-2.5  block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0">
+                    <a class="" href="about.html">About</a>
+                </li>
+                <li class="px-2.5  block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0">
+                    <a  href="#service">Services</a>
+                    <ul class="absolute bg-green-200 opacity-80 top-10 left-0 hidden group-hover:block w-56">
+                        <li class="p-2 border-b-2"><a href="">item 1</a></li>
+                        <li class=""><a href="">item 1</a></li>
+                        <li class=""><a href="">item 1</a></li>
+                        <li class=""><a href="">item 1</a></li>
+                    </ul>
+                </li>
+
+                <li class="px-2.5  block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0">
+                    <a class="" href="#portfolio">Portfolio</a>
+                </li>
+
+                <li class="px-2.5  block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0">
+                    <a href="price.html">Pricing</a>
+                </li>
+                <li class="px-2.5  block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0">
+                    <a href="">Blog</a>
+                    <!-- <ul>
+                    <li><a href="blog-home.html">Blog Home</a></li>
+                    <li><a href="blog-single.html">Blog Single</a></li>
+                    </ul> -->
+                </li>
+                <li class="px-2.5  block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0">
+                    <a href="">Pages</a>
+                    <!-- <ul>
+                    <li><a href="elements.html">Elements</a></li>
+                    <li class="menu-has-children"><a href="">Level 2 </a>
+                    <ul>
+                    <li><a href="#">Item One</a></li>
+                    <li><a href="#">Item Two</a></li>
+                    </ul>
+                    </li>
+                    </ul> -->
+                </li>
+                <li class="px-2.5  block text-black py-2 text-[12px] uppercase font-medium hover:text-[#2336e6] transition-all duration-700 transform hover:border-b-purple-200 border-0">
+                    <a href="contact.html">Contact</a></li>
+                </ul>
+                </nav>
+            <!-- navbar area end -->
+
+        </div>
+
+    </div>
+
+</header>
+<!-- header area -->
+
+  <!-- about Area Start -->
+  <section class="bg-gradient-to-r from-[#8490ff] to-[#62bdfc] section-gap">
+    <div class="container mx-auto">
+     <div class="text-center">
+        <h2 class=" text-4xl text-white pb-4">About Me</h2>
+        <p class="text-white link-nav flex items-center gap-2 justify-center">
+            <a href="index.html">Home </a>
+             <span class="lnr lnr-arrow-right"></span>
+              <a href="about.html"> About Me</a>
+            </p>
+     </div>
+    </div>
+   </section>
+   <!-- about Area End -->
+<!-- about section -->
+<section class="section-gap">
+    <div class="container mx-auto">
+      <div
+        class="flex">
+        <!-- about Logo -->
+        <div class="flex self-end lg:w-1/2 w-full">
+            <img
+              src="https://preview.colorlib.com/theme/personal/img/xabout-img.png.pagespeed.ic.1_IGXbMOtM.webp"
+              alt=""
+              class=" "
+            />
+          </div>
+        <!-- about Logo -->
+
+        <!-- about content -->
+       <div class="w-1/2 mt-10 p-10">
+        <span class="text-[16px] text-gray-500">ABOUT ME</span>
+        <h2 class="text-[40px] pb-6 font-bold pt-6 ">PERSONAL DETAILS</h2>
+        <p class="text-gray-600 pb-6 text-[14px]">
+          Here, I focus on a range of items and features that we use in
+          life without giving them a second thought. such as Coca Cola.
+          Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco.
+        </p>
+        <a
+        href="#"
+        class="uppercase p-2 w-[250px] px-6 text-white hover:shadow-xl transition ease-in-out duration-500 bg-blue-500 shadow-lg shadow-blue-500/50 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:"
+        >View Full Details</a
+      >
+       </div>
+        <!-- about content -->
+
+      </div>
+
+      <div class="pt-4">
+        <p class="text-gray-500 text-[16px] pb-4">It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduction of Virtual Game, it has been achieving great heights so far as its popularity and technological advancement are concerned. The history of video game is as interesting as a fairy tale.</p>
+        <p class="text-gray-500 text-[14px] pb-4">The quality of today’s video game was not at all there when video game first conceptualized and played ever. During the formulative years, video games were created by using various interactive electronic devices with various display formats. The first ever video game was designed in 1947 by Thomas T. Goldsmith Jr.</p>
+      </div>
+
+     <h2 class="font-semibold pb-4"> Tools Expertness</h2>
+      <div class="grid grid-cols-2 justify-between items-center gap-6">
+         
+        <div class="">
+            <div class="flex justify-end mb-1">
+                <p>After Effects 85%</p>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                <div class="bg-gradient-to-r from-[#8490ff] to-[#62bdfc] h-full rounded-full" style="width: 65%"></div>
+            </div>
+        </div>
+        <div class="">
+            <div class="flex justify-end mb-1">
+                <p>Sublime 95%</p>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                <div class="bg-gradient-to-r from-[#8490ff] to-[#62bdfc] h-full rounded-full" style="width: 95%"></div>
+            </div>
+        </div>
+        <div class="">
+            <div class="flex justify-end mb-1">
+                <p>Photoshop 90%</p>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                <div class="bg-gradient-to-r from-[#8490ff] to-[#62bdfc] h-full rounded-full" style="width: 90%"></div>
+            </div>
+        </div>
+        <div class="">
+            <div class="flex justify-end mb-1">
+                <p>
+                    Sketch 85%
+                    </p>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                <div class="bg-gradient-to-r from-[#8490ff] to-[#62bdfc] h-full rounded-full" style="width: 85%"></div>
+            </div>
+        </div>
+        <div class="">
+            <div class="flex justify-end mb-1">
+                <p>
+                    Illustrator 70%
+                    </p>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+                <div class="bg-gradient-to-r from-[#8490ff] to-[#62bdfc] h-full rounded-full" style="width: 75%"></div>
+            </div>
+        </div>
+
+    
+  
+      </div>
+
+       <!-- service header -->
+       <div class="text-center p-10">
+        <h2
+          class="text-3xl text-black font-semibold pb-4 overflow-hidden"
+        >
+        My Qualifications
+        </h2>
+        <p class="text-gray-500 text-[14px]">
+            Who are in extremely love with eco friendly system.
+        </p>
+      </div>
+      <!-- service header -->
+     <ul class="">
+        <li>
+            <div>
+               
+            </div>
+        </li>
+     </ul>
+    </div>
+  </section>
+
+<!-- about section -->
+
+       <!-- Footer Area Start -->
+       <section class="bg-[#04091E] p-[120px]">
+
+        <div class="container mx-auto">
+            <div class="flex gap-4">
+               <!-- single footer item -->
+               <div class="w-5/12">
+                <span class="text-lg text-white">About Me</span>
+                <p class="text-gray-600 text-sm pt-4">
+                  We have tested a number of registry fix and clean utilities and
+                  present our top 3 list on our site for your convenience.
+                </p>
+                <p class="text-gray-600 pt-4 text-[16px]">
+                    Copyright ©
+                    <script>document.write(new Date().getFullYear());</script>
+                     All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a class="text-indigo-600" href="https://colorlib.com" target="_blank">Colorlib</a>
+                    </p>
+            </div>
+               <!-- single footer item -->
+                <div class="w-5/12">
+                    <span class="text-lg text-white pb-4">Newsletter</span>
+        <p class="text-gray-600 text-sm pt-4">
+          Stay updated with our latest trends
+        </p>
+        <form action="" class="flex mt-4">
+          <!-- <input
+            type="text"
+            placeholder="Enter Email Address"
+            class="px-4 py-2 w-80 focus:outline-none focus:ring focus:ring-violet-300 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600"
+          /> -->
+          <input type="text" placeholder="Search..." class="transition duration-300 focus:outline-none focus:ring w-4/5 pl-[20px] py-2 placeholder:text-sm">
+          <span class="bg-indigo-600 w-10 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-4 text-sm text-white "
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+          </span>
+        </form>
+                </div>
+
+                <div class="w-2/12">
+                    <span class="text-gray-100 text-lg">Follow Me</span>
+        <p class="text-gray-600 pt-4">Let us be social</p>
+        <div class="overflow-hidden pt-2 flex items-center ">
+          <a
+            href=""
+            class="text-white hover:text-indigo-600 transition-all duration-500 h-10 w-10 text-center py-2"
+          >
+            <i class="fa-brands fa-facebook-f text-[16px]"></i>
+          </a>
+          <a
+            href=""
+            class="text-white hover:text-indigo-600 transition-all duration-500 h-10 w-10 text-center py-2"
+          >
+            <i class="fa-brands fa-twitter text-[16px]"></i>
+          </a>
+          <a
+            href=""
+            class="text-white hover:text-indigo-600 transition-all duration-500 h-10 w-10 text-center py-2"
+          >
+            <i class="fa-brands fa-dribbble text-[16px]"></i>
+          </a>
+          <a
+            href=""
+            class="text-white hover:text-indigo-600 transition-all duration-500 h-10 w-10 text-center py-2"
+          >
+            <i class="fa-brands fa-behance text-[16px]"></i>
+          </a>
+        </div>
+                </div>
+            </div>
+        </div>
+        
+      </section>
+      <!-- Footer Area End -->
+
+
+  <!-- script  -->
+  <script src="./public/plugins/js/jquery-3.6.1.min.js"/></script>
+  <script src="./public/plugins/js/waypoints.min.js"></script>
+  <script src="./public/plugins/js/jquery.counterup.min.js"/></script>
+  
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  <!-- owl carosual -->
+  <script src="./public/plugins/js/owl.carousel.min.js"/></script>
+  <!-- owl carosual -->
+  
+  <!-- slick slider -->
+  <script type="text/javascript" src="./public/plugins/js/slick.min.js"></script>	
+  <!-- slick slider -->
+  
+    <script src=".public/wow/wow.js"></script>
+    <script src="./public/mixitup.min.js"></script>
+    <script src="./public/main.js"></script>
+  
+    <script>
+        $(document).ready(function(){
+            $('li').on('click',function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+   
+
+    <script>
+
+        // $('#nav-menu a').click(function(e){
+
+        //    e.preventDefault();
+        //     var hash = this.hash;
+        //     var position = $(hash).offset().top;
+        //   // alert(position);
+        //     $('html').animate({
+        //         scrollTop:position
+        //     },800);
+        // });
+        $(document).ready(function(){
+            $('li').on('click',function(){
+                $(this).siblings().removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+
+
+<script>
+     $(document).ready(function () {
+        $(window).on("scroll", function () {
+          //if you hard code, then use console
+          //.log to determine when you want the
+          //nav bar to stick.
+          var scroll = $(window).scrollTop();
+          if (scroll < 150) {
+            $(".top-menu").removeClass("scroll-header");
+          } else {
+            $(".top-menu").addClass("scroll-header");
+          }
+  
+          //   console.log($(window).scrollTop());
+          //   if ($(window).scrollTop() > 50) {
+          //     $(".sticky").addClass("menu");
+          //   }
+          //   if ($(window).scrollTop() < 50) {
+          //     $(".sticky").removeClass("menu");
+          //   }
+        });
+      });
+
+
+      $(document).ready(function(){
+     $('li').on('click',function(){
+         $(this).siblings().removeClass('active');
+         $(this).addClass('active');
+     });
+ });
+  </script>
+
+  <!-- script  -->
+  
+
+  </body>
+</html>
+

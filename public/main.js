@@ -160,4 +160,88 @@ $('.testimonial').slick({
 
 //slick Slider
 
+/* scroll to fixed top menu */
 
+   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    //   window.onscroll = function () {
+    //     scrollFunction();
+    //   };
+
+    //   function scrollFunction() {
+    //     if (
+    //       document.body.scrollTop > 10 ||
+    //       document.documentElement.scrollTop > 10
+    //     ) {
+    //       document.getElementById("menu").style.padding = "30px 10px";
+    //       document.getElementById("logo").style.fontSize = "25px";
+    //     } else {
+    //       document.getElementById("navbar").style.padding = "80px 10px";
+    //       document.getElementById("logo").style.fontSize = "35px";
+    //     }
+    //   }
+    $(document).ready(function () {
+        $(window).on("scroll", function () {
+          //if you hard code, then use console
+          //.log to determine when you want the
+          //nav bar to stick.
+          var scroll = $(window).scrollTop();
+          if (scroll < 150) {
+            $(".top-menu").removeClass("scroll-header");
+          } else {
+            $(".top-menu").addClass("scroll-header");
+          }
+  
+          //   console.log($(window).scrollTop());
+          //   if ($(window).scrollTop() > 50) {
+          //     $(".sticky").addClass("menu");
+          //   }
+          //   if ($(window).scrollTop() < 50) {
+          //     $(".sticky").removeClass("menu");
+          //   }
+        });
+      });
+
+/* scroll to fixed top menu */
+
+
+// $(document).ready(function(){
+    
+//     $('li').on('click',function(){
+//         $(this).siblings().removeClass('active');
+//         $(this).addClass('active');
+//     });
+// });
+
+
+// $(document).ready(function(){
+//     $('ul li a').click(function(){
+//       $('li a').removeClass("active");
+//       $(this).addClass("active");
+//   });
+//   });
+
+// $('#nav-menu a').click(function(e){
+
+//     e.preventDefault();
+//      var hash = this.hash;
+//      var position = $(hash).offset().top;
+//    // alert(position);
+//      $('html').animate({
+//          scrollTop:position
+//      },800);
+//  });
+ $(document).ready(function(){
+     $('li').on('click',function(){
+         $(this).siblings().removeClass('active');
+         $(this).addClass('active');
+     });
+ });
+
+
+// const activePage = window.location.pathname;
+// const navLinks = document.querySelectorAll('li a').forEach(link => {
+//   if(link.href.includes(`${activePage}`)){
+//     link.classList.add('active');
+//    // console.log(link);
+//   }
+// });
