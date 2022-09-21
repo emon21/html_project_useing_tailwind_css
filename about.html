@@ -558,27 +558,6 @@
 
 
 
-     $(document).ready(function () {
-        $(window).on("scroll", function () {
-          //if you hard code, then use console
-          //.log to determine when you want the
-          //nav bar to stick.
-          var scroll = $(window).scrollTop();
-          if (scroll < 150) {
-            $(".top-menu").removeClass("scroll-header");
-          } else {
-            $(".top-menu").addClass("scroll-header");
-          }
-  
-            // console.log($(window).scrollTop());
-            // if ($(window).scrollTop() > 50) {
-            //   $(".sticky").addClass("menu");
-            // }
-            // if ($(window).scrollTop() < 50) {
-            //   $(".sticky").removeClass("menu");
-            // }
-        });
-      });
 
 
 //       $(document).ready(function(){

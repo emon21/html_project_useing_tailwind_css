@@ -179,7 +179,7 @@ $('.testimonial').slick({
     //       document.getElementById("logo").style.fontSize = "35px";
     //     }
     //   }
-    $(document).ready(function () {
+  
         $(window).on("scroll", function () {
           //if you hard code, then use console
           //.log to determine when you want the
@@ -191,15 +191,18 @@ $('.testimonial').slick({
             $(".top-menu").addClass("scroll-header");
           }
   
-          //   console.log($(window).scrollTop());
-          //   if ($(window).scrollTop() > 50) {
-          //     $(".sticky").addClass("menu");
-          //   }
-          //   if ($(window).scrollTop() < 50) {
-          //     $(".sticky").removeClass("menu");
-          //   }
+            // console.log($(window).scrollTop());
+            // if ($(window).scrollTop() > 50) {
+            //   $(".sticky").addClass("menu");
+            // }
+            // if ($(window).scrollTop() < 50) {
+            //   $(".sticky").removeClass("menu");
+            // }
         });
-      });
+    
+
+
+      
 
 /* scroll to fixed top menu */
 

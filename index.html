@@ -52,6 +52,7 @@
    <!-- slick slider -->
 
    <link rel="stylesheet" href="./public/style.css" />
+   <link rel="stylesheet" href="./public/responsive.css" />
    <link rel="stylesheet" href="./public/custom.css" />
   </head>
   <body data-spy="scroll" data-target=".nav" data-offset="50" id="home">
@@ -65,7 +66,7 @@
                 <a href="">
                     <img
                     class=""
-                    src="data:image/webp;base64,UklGRlwDAABXRUJQVlA4TFADAAAvhEAHEGfjppEkSYp5gSzmRXr+Ka3TUXDUNpIgOftcGMvl+AM6qcsg20idyvsTvcy5jWzbaQ6X+YP3UI9aUKr+U5vh718H8HwX8fvj/f0bf8QqwY2lEMCiAhwqwEUBXFSAA6iAvWSFAGm5cSlBQaEAF+NGFsAI5f6Z4Yu7CAl6eSHMc8LzZHNAMWdDnOecNyNDMWfDO1inRoZizDoHnPCcbB7mMOaE100In7fH94F6hu5/HgBBurbthSS9SSrlqqxtm2Pbto3V+R9A1/d9VbXX1P+I/jsQ2DaNbO8YVPIjIHtmdGIKjffc0PDI5DQa7vn+gcHmZ6m7t6/5WW7r7GJp8hd+//jJM47m+td3IWNorle+8gzNolFO4thJFKss/XM1QHPPWms9m+AqWSlFhrH/788WgLVvJAsAZsfGq/1YopiNw9Wxpjp8/uLl623g05ciHUJb1pKyV05HT54+a2UH6x8/F1nsWWBtWU3aubTFqxzgIs8YmxZAofWy3BoHFxpj/JxixgVXwrkya7RPVy73CbC1PtPxw0ePi7x59/4DTXuX0JaVBCAjSsXF0Ep5LYTYMZaI0FFrR7gMpcgAxGwvKaWpTu7df8DylqekLavLCVuCTCNxEig2SgeJywhcinBnAgTXzTt3pVxsbF7Kmaj4JCNPgmLG4QwZqSYjMakmLC2GEAWXl5EtExOugAHDFhOSpkbS9dtCXu2yPxUyWucjBXQkHG3NFtgqpROkUUhQDOFikBZATiA5kRF0do3n+R5QlqGZWj+ki18yxpDx8JmIKFUk9o6vlObnn8AIRIkgnLM8OazelmXyPHLShK2mNVVCydiuyx0fYiCK/IFAlEpieXgE4ODvny0h3fOoJM0ZyLYDXBiGmTA4l7s8seSQtFB8ttheiQQiXxTJvWOhLVnallBPZNs5MgIlySgVkJ/xybaPQP4sLJMhKAiVLJzduHUK3pYkK79+L6OuspKjL6258iNdSOJSrkwxIyoRM2lLHgC1hUAam/SEs6RAJDKUCLaGToW2fL31n4SE1KHvII7A+WRMdMMTLpujXORbKkiq6JbUln/w3+ycqwxTg4sRVQa6IbXlPzTXYlvuo8EuacsGW2jLZltoy6b77PrNEzTRAA=="
+                    src="img/logo.png"
                     alt=""
                 />
                 </a>
@@ -161,7 +162,7 @@
             
             <!-- left side -->
             <!-- right side -->
-            <div class="flex self-end lg:w-1/2 w-full right-0">
+            <div class="lg:w-1/2 w-full right-0">
                 <img
                   src="https://preview.colorlib.com/theme/personal/img/xhero-img.png.pagespeed.ic.INRfo5JT2o.webp"
                   alt=""
@@ -179,40 +180,41 @@
  
 <!-- about section -->
 <section class="" id="about">
-    <div class="container mx-auto">
-      <div
-        class="flex">
-        <!-- about Logo -->
-        <div class="flex self-end lg:w-1/2 w-full">
-            <img
-              src="https://preview.colorlib.com/theme/personal/img/xabout-img.png.pagespeed.ic.1_IGXbMOtM.webp"
-              alt=""
-              class=" "
-            />
-          </div>
-        <!-- about Logo -->
+    <div class="container mx-auto py-20">
 
-        <!-- about content -->
-       <div class="w-1/2 mt-10 p-10">
-        <span class="text-[16px] text-gray-500">ABOUT ME</span>
-        <h2 class="text-[40px] pb-6 font-bold pt-6 ">PERSONAL DETAILS</h2>
-        <p class="text-gray-600 pb-6 text-[14px]">
-          Here, I focus on a range of items and features that we use in
-          life without giving them a second thought. such as Coca Cola.
-          Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco.
-        </p>
-        <a
-        href="#"
-        class="p-2 w-[250px] px-6 text-white hover:shadow-xl transition ease-in-out duration-500 bg-blue-500 shadow-lg shadow-blue-500/50 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:"
-        >View Full Details</a
-      >
-       </div>
-        <!-- about content -->
 
-      </div>
+        <div class="flex md:flex-col flex-wrap lg:flex-row flex-col">
 
+            <!-- left side -->
+
+            <div class="lg:w-1/2 w-full">
+                <img
+                  src="https://preview.colorlib.com/theme/personal/img/xabout-img.png.pagespeed.ic.1_IGXbMOtM.webp"
+                  alt=""
+                  class="w-3/5 lg:w-5/6 mx-auto mb-8 lg:mb-0"
+                />
+              </div>
+            <!-- left side -->
+            
+            <!-- right side -->
+            <div class="w-3/5 lg:w-1/2 mx-auto text-center lg:text-start lg:mt-0 md:px-4">
+                <span class="text-[16px] text-gray-500">ABOUT ME</span>
+            <h2 class="text-[40px] pb-6 font-bold pt-6 ">PERSONAL DETAILS</h2>
+            <p class="text-gray-600 pb-6 text-[14px]">
+                Here, I focus on a range of items and features that we use in
+                life without giving them a second thought. such as Coca Cola.
+                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <a href="#" class="p-2 w-[250px] px-6 text-white hover:shadow-xl transition ease-in-out duration-500 bg-blue-500 shadow-lg shadow-blue-500/50 hover:bg-gradient-to-r from-cyan-500 to-blue-500 uppercase">View
+                Full Details</a>
+                
+              </div>
+            <!-- right side -->
+
+        </div>
+     
        <!-- service header -->
        <div class="text-center p-10">
         <h2
