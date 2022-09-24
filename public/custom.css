@@ -388,12 +388,18 @@
   ul li{
   transition: all .5s;
   }
-  ul li.hover{
+
+  /* ul li.hover{
       background: rgb(227, 9, 9);
       color: blue;
       
-      }
-    
+      } */
+    .pagenate_icon{
+        display: none;
+    }
+    .pagenate_icon:hover{
+display: block;
+    }
 
   .single_post:hover h2{
     color: blue;

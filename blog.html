@@ -53,6 +53,11 @@
 
    <link rel="stylesheet" href="./public/style.css" />
    <link rel="stylesheet" href="./public/custom.css" />
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
   </head>
   <body data-spy="scroll" data-target=".nav" data-offset="50" id="home">
    
@@ -136,6 +141,43 @@
 </header>
 <!-- header area -->
 
+<!-- navbar -->
+<nav class=" p-5 bg-white shadow md:flex md:items-center md:justify-between">
+<div clas>
+    <span class="text-2xl font-[Poppins] cursor-pointer">
+        <img class="h-10 inline mr-2" src="data:image/png;base64,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" alt="">
+        Tailwind css
+    </span>
+
+    <span class="text-3xl cursor-pointer md:hidden mx-2 block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+    </span>
+</div>
+<ul class="md:flex md:items-center -z-1 md:z-auto md:static absolute  bg-white w-full left-0 md:w-auto md:px-0 py-4 md:pl-0  pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 ">
+    <li class="mx-4 my-6 md:my-0">
+        <a href="" class="text-xl hover:text-red-600 duration-500">Home</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+        <a href="" class="text-xl hover:text-red-600 duration-500">Service</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+        <a href="" class="text-xl hover:text-red-600 duration-500">About</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+        <a href="" class="text-xl hover:text-red-600 duration-500">News</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+        <a href="" class="text-xl hover:text-red-600 duration-500">Protfolio</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+        <a href="" class="text-xl hover:text-red-600 duration-500">Contact</a>
+    </li>
+    <button class="bg-cyan-500 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-600 rounded ">Get Started</button>
+   
+</ul>
+</nav>
+<!-- navbar -->
+
   <!-- about Area Start -->
   <section class="bg-gradient-to-r from-[#8490ff] to-[#62bdfc] section-gap">
     <div class="container mx-auto">
@@ -164,29 +206,289 @@
           </div>
      
 
-         <div class="flex justify-between gap-2">
+         <div class="flex justify-between gap-4">
                 <!-- post -->
-                <div class="bg-indigo-600 h-64 w-8/12">
+                <div class=" w-8/12">
                     <!-- post Items -->
 
-                    <div>
+                    <!-- <div>
                         <img src="https://preview.colorlib.com/theme/personal/img/blog/xfeature-img1.jpg.pagespeed.ic.6v6CI5mm0C.webp" alt="">
-                    </div>
+                    </div> -->
                     <!-- post Items -->
+
+                    <div class=" rounded overflow-hidden cursor-pointer">
+                        <!-- img -->
+                        <div class="">
+                            <img src="https://preview.colorlib.com/theme/personal/img/blog/xfeature-img1.jpg.pagespeed.ic.6v6CI5mm0C.webp" alt="">
+                        </div>
+                        <!-- img -->
+                        <!-- post content -->
+                        <div class="">
+                          <!-- overly -->
+                          <div class="flex justify-between items-center">
+                            <!-- img -->
+                            <div class="flex items-center gap-2 pt-2">
+                              <img
+                                src="https://preview.colorlib.com/theme/personal/img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp"
+                                alt=""
+                              />
+                              <span>User</span>
+                            </div>
+                            <!-- img -->
+                            <!-- user -->
+                            <div class="flex items-center mt-2">
+                              <span class="pr-4 text-[14px] from-neutral-300"
+                                >13th Dec 2022</span
+                              >
+                             
+                                <span class="">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    class="w-4 h-4"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                                    />
+                                  </svg>
+                                </span>
+                                <span
+                                  class="pr-3 pl-0.5 text-[16px] from-neutral-300 text-gray-700"
+                                  >15</span
+                                >
+                         
+                                <span class="">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      fill="none"
+                                      viewBox="0 0 24 24"
+                                      stroke="currentColor"
+                                      class="w-4 h-4"
+                                    >
+                                      <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
+                                      />
+                                    </svg>
+                                  </span>
+                                  <span
+                                    class="pl-0.5 text-[16px] from-neutral-300 text-gray-700"
+                                    >04</span>
+                            </div>
+                            <!-- user -->
+                          </div>
+                          <!-- overly -->
+                          <hr class="bg-gray-200 mt-2 w-full block" />
+                        </div>
+                        <!-- post content -->
+            
+                        <!-- post details -->
+                        <div class="mt-4 mb-2">
+                          <h2 class="font-bold text-black text-[25px] post_title">
+                            BREAK THROUGH SELF DOUBT AND FEARfdfvdsgdsgdfgdfg
+                          </h2>
+                          <p class="text-gray-500 pt-2 text-sm">
+                            Dream interpretation has many forms; it can be done be done
+                            for the sake of fun, hobby or can be taken up as a serious
+                            career.
+                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.
+                          </p>
+                          <p class="text-gray-500 pt-2 text-sm">
+                            Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
+                          </p>
+                          <p class="text-gray-500 pt-2 text-sm">
+                            Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed
+                          </p>
+
+                          <p class="bg-white text-gray-500 p-6 text-xs mt-4">
+                           MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.
+                          </p>
+                          <!-- post image gallery -->
+                          <div class="flex gap-6 mt-4">
+                            <div>
+                                <img src="https://preview.colorlib.com/theme/personal/img/blog/xpost-img1.jpg.pagespeed.ic.UeMlV6U-bS.webp" alt="">
+                            </div>
+                            <div>
+                                <img src="https://preview.colorlib.com/theme/personal/img/blog/xpost-img2.jpg.pagespeed.ic.1S4bA8GR37.webp" alt="">
+                            </div>
+                          </div>
+                          <!-- post image gallery -->
+
+                          <p class="bg-white text-gray-500 p-6 text-xs mt-4">
+                            MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.
+                           </p>
+                        </div>
+                        <!-- post details -->
+
+                        <hr>
+
+                        <!-- pagination -->
+                        <div class="mt-4 flex justify-between">
+
+                            <div class="flex gap-4 ">
+                                <!-- img -->
+                                <div class="relative">
+                                    <img class=" hover:opacity-50" src="https://preview.colorlib.com/theme/personal/img/blog/xc3.jpg.pagespeed.ic.333xujAcyr.webp" alt="">
+                                    <span class="bg-gray-700 opacity-0 hover:opacity-50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-6xl text-white font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                                      </svg>
+                                      </span>
+                                </div>
+                                <!-- img -->
+                             
+                                <div class=" text-left">
+                                    <p class="text-xs text-gray-400 capitalize">prev post</p>
+                                    <h4 class="font-semibold capitalize">space the final frontier</h4>
+                                </div>
+                                <!-- title -->
+                            </div>
+                            <div class="flex  gap-4 ">
+                                
+                                <!-- title -->
+                                <div class="text-right">
+                                    <p class="text-xs text-gray-400 capitalize">next post</p>
+                                    <h4 class="font-semibold capitalize">space the final frontier</h4>
+                                </div>
+                                <!-- title -->
+                                <!-- img -->
+                                <div class="relative">
+                                    <img class=" hover:opacity-50" src="https://preview.colorlib.com/theme/personal/img/blog/xc3.jpg.pagespeed.ic.333xujAcyr.webp" alt="">
+                                    <span class="bg-gray-700 opacity-0 hover:opacity-50 duration-300 absolute inset-0 z-10 flex justify-center items-center text-6xl text-white font-semibold">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                          </svg>
+                                          
+                                      </span>
+                                </div>
+                                <!-- img -->
+                            </div>
+
+                            <!-- 
+                                <div class="relative">
+                                    <img src="https://preview.colorlib.com/theme/personal/img/blog/xc3.jpg.pagespeed.ic.333xujAcyr.webp" alt="">
+                                
+                                    <span class="bg-gray-900 opacity-0 hover:opacity-50 duration-300 absolute inset-0 z-10 flex items-center justify-center text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        </svg>
+                                        
+                                    </span>
+                                </div> 
+                            -->
+
+                        </div>
+                        <!-- pagination -->
+                      </div>
+
+                      <!-- comment area -->
+                      <div class="border-2 mt-4">
+
+                        <div>
+                            <p class="text-center p-6">05 Comments</p>
+                        </div>
+
+                        <div class="p-4 flex justify-between ">
+                            <div class="flex gap-4">
+                                <div>
+                                    <img src="https://preview.colorlib.com/theme/personal/img/blog/xc1.jpg.pagespeed.ic.lwjELwScc_.webp" alt="">
+                                </div>
+                                <div>
+                                    <h4>Emilly Blunt</h4>
+                                    <p class="text-gray-300">December 4, 2017 at 3:12 pm</p>
+                                    <p class="text-gray-400">Never say goodbye till the end comes!</p>
+                                </div>
+                            </div>
+                           
+                            <div class="">
+                                <button class="capitalize hover:text-white bg-white text-black hover:bg-indigo-700 px-2 w-20 h-8 text-xs transition-all duration-500 mt-4">reply</button>
+                            </div>
+                        </div>
+                        
+                        <hr class="overflow-hidden">
+                        <div class="p-4 flex justify-between ">
+                            <div class="flex gap-4">
+                                <div>
+                                    <img src="https://preview.colorlib.com/theme/personal/img/blog/xc3.jpg.pagespeed.ic.333xujAcyr.webp" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Annie Stephens</h4>
+                                    <p class="text-gray-300">December 4, 2017 at 3:12 pm</p>
+                                    <p class="text-gray-400">Never say goodbye till the end comes!</p>
+                                </div>
+                            </div>
+                           
+                            <div class="">
+                                <button class="capitalize hover:text-white bg-white text-black hover:bg-indigo-700 px-2 w-20 h-8 text-xs transition-all duration-500 mt-4">reply</button>
+                            </div>
+                        </div>
+
+                      </div>
+                      <!-- comment area -->
+
+                      <!-- leave comment -->
+                    
+                       <div class="border-2 mt-6">
+
+                        <div>
+                            <p class="text-center p-6">Leave a Comment</p>
+                        </div>
+
+                        <div class="p-4 ">
+                           
+                            <form class="w-full">
+                                <div class="flex flex-wrap">
+                                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    
+                                    <input class="appearance-none block w-full border border-gray-50   focus:border-gray-200 text-gray-700  py-3 px-3 mb-3 leading-tight focus:outline-none focus:bg-white text-xs"  type="text" placeholder="Enter Name">
+                                    <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                                  </div>
+                                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                                    
+                                    <input class="appearance-none block w-full border border-gray-50   focus:border-gray-200  text-gray-700  py-3 px-3 mb-3 leading-tight focus:outline-none focus:bg-white text-xs"  type="text" placeholder="Enter Email Address">
+                                    <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                                  </div>
+                                
+                                </div>
+                                <div class="w-full px-3 mb-6 md:mb-0">
+                                    
+                                    <input class="appearance-none block w-full border border-gray-50   focus:border-gray-200   text-gray-700  py-3 px-3 mb-3 leading-tight focus:outline-none focus:bg-white text-xs"  type="text" placeholder="Enter Email Address">
+                                    <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+                                  </div>
+                                <div class=" px-3 mb-6 md:mb-0">
+                                    
+                                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 focus:outline-none  border border-gray-50   focus:border-gray-200   rounded-sm  " placeholder="Message..."></textarea>
+
+                                  </div>
+                                  <button class="text-white uppercase bg-indigo-600 flex mx-auto mt-4 px-2 py-2 text-xs border hover:bg-white hover:text-blue-600 hover:border-indigo-400 transition duration-500">post comment</button>
+                              </form>
+                        </div>
+                        
+
+                      </div>
+                    
+                      <!-- leave comment -->
+
                 </div>
+
                 <!-- post -->
 
                 <!-- sidebar -->
                     <div class="w-4/12 border-2 border-gray-200 p-2">
                         
                         <!-- search -->
-                        <div class="p-4">
+                        <div class="p-4 text-white">
                             <form action="">
                                 
                                 
-                                <div class="flex justify-between items-center relative bg-indigo-400 rounded-2xl overflow-hidden ">
+                                <div class="flex justify-between items-center relative bg-indigo-400 rounded-full overflow-hidden">
                                     
-                                 <input type="text" placeholder="Search..." class="w-5/6 bg-indigo-400 transition duration-300 focus:outline-none focus:ring  pl-[20px] py-2"
+                                 <input type="text" placeholder="Search..." class="w-5/6 bg-indigo-400 text-white placeholder:text-white transition duration-300 focus:outline-none focus:ring  pl-[20px] py-2"
                                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Searching...'" >
                                  <button class="absolute right-0 mr-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" class="w-6 h-6 text-white">
@@ -239,13 +541,75 @@
 
                         <hr class="h-0.5 mx-2 mb-4 overflow-hidden">
 
-<!-- popular posts -->
-<div class="p-2">
-    <h4 class="bg-indigo-400 p-2 text-white text-center">Popular Posts</h4>
-</div>
-<!-- popular posts -->
+                        <!-- popular posts -->
+                        <div class="p-2">
+                            <h4 class="bg-indigo-400 p-2 text-white text-center">Popular Posts</h4>
+                            <!-- post -->
+                            <div class="flex-row mt-4">
 
-<hr class="h-0.5 mx-2 mb-4 overflow-hidden">
+                                <!-- post item -->
+                                <div class="flex flex-row gap-4 mb-4 hover:text-indigo-600 transition ease-in-out duration-500">
+                                    <div>
+                                        <img class="w-20" src="data:image/webp;base64,UklGRqYEAABXRUJQVlA4IJoEAACQFQCdASpkADwAPm0ylUekIqIhqlOZsIANiWYA0BXA/gHS8bU8J5sdk/wnELnOuAelXbl+YDzWPxA96HnAdS5vSHkzVk3aHtpN83g9pepnXkJ+nvYK/Wv/iCkWpxDftvwG67zux8qvShXCUq6Co8Q+cufRjEN+/TThOdXKk5KMmZ1ychk5u7Usw9r0kQaqco13yA6OOX8kVM+2IxpYZjDEM70l9tDo74+lL1ZslEBtTGOvN8sAAP77p2+/WuPMUcRox7hq+ACJjXOC1uQXBnPstplj+bnQs2feFmc2vWX9Phb/Nm7kwJ2EG5LP/aEVqyGvTztm2zV/QH5xbYG4coovi+8wVhHR+WfUF3wj5l8mLgb8BW6KaARnaUKEafyh5KGHDLEIs+Hi4jtYfsGKN/GWkxE4SGXMnEoMCUeu6YFoCJnhuNus3tVSrdV9Wlr9utgMBfEknApQl3y1zoHW/lyN/U0n2R+fsv8q3/esBFP+0YJeX9T5gtKwZHu+9dbLhTFHvWcL3UCpqmDX5dvxYbrxgiRcMht+pcsk4QtzNm91l3n8cJDCf6iuBkho0394OHuAKfsVdjSC0iNW6IZtVDhwYeK6/oLKJeyq/4qPxqasxYPWG6D7lvZkuAxuJYsxijTVDjfbZ076/SVOET6J2dJnbvywJoiMrkHSNK3fxFwQ+l6ELBDp45hW5yWtJt6EfJNymdwR5tsF7hiACKiDgZE1mnpkYwkmRsQuV1TALynoVb2N3GcsD8CqRZ33wNhTf85/Cb2Jri48XCjn4pvGAg468qo5hKquzo/gRGd9EM4qbD2y9SuJwND1qDxB2FV29tAlAFdCS0tPGdCp7BQEuPjhYjNJFk70u9xWNP6lzp8vu9ykmUwTDMrzT0hNMWTTHSiFN+fZ8ryQLTrCFk/Ay950KCbae1SfPY/pizd3f5wMLpZ8hU+TCVO4d50QpIqQiAJ/THbY94urq035BtQyD8aAw3JVTvXLv8YX+6QAPc10O/0gzqXhnVq9DPM7dCdJ/6/xhQ6hwzoXr/8bX2DmrkFzOCmtnzl0FqYDACNithFyVGHPVhsZOzQ+aMu/ACASwv+tfdEkcdzRrT2cqg7VHczKAOMJ2AK8cj8nrt9zQMgiEJ3bP8XwIJEsSLX6IP7+AgDluKkj1nLtRJ776Zrd5Z77j4M/5Oj9rEKdSG8Bfr1X7lyF4dteksSqH45ubWVdyRNIQp8sQQEZIdaV693M6r+fBi+tY8/OzJt1IVC5joNeoZ1wJuT5Q8m6w1GeMxKk41oas44owrtu+uQ73nQ4myaFXiRSFbDaVfuwPlCvBAXCmf92GEuT3RpXE6fIsd5p0yvrZ15QlBjlVspU46TLI4baq6jEmGuwTE7AHWCUWPJIMp8fhCiihTxFpMyjXVA3QdxLX1KV+6ZYjzqB7uTVf7CyCs//+1uqhlq2Hh1oMxOygm+khYpEIBYimgTnid4P0sYqtODNND6GzxY5mmcknzMpMtg9n2itoUuS8P46v3r5If4rzAjtY1VdH7TfKwQddaJLhK/BHNYFvkwJCl4dKzdPRjf8nBZwtAAAAA==" alt="">
+                                    </div>
+                                <div>
+                                    <a href="single-blog.html">
+                                        <h3 class="text-[16px] font-semibold">From life was you fish...</h3>
+                                        </a>
+                                        <p class="text-[14px] text-gray-500">02 Hours ago</p>
+                                </div>
+                            </div>
+                                <!-- post item -->
+
+                                <!-- post item -->
+                                <div class="flex flex-row gap-4 mb-4 hover:text-indigo-600 transition ease-in-out duration-500">
+                                    <div>
+                                        <img class="w-20" src="data:image/webp;base64,UklGRsYEAABXRUJQVlA4ILoEAADQFQCdASpkADwAPm0uk0WkIqGWSu4cQAbEswBiSgKnT9d84G2v378Qc60ciFxt5vM10QN6F9CXpkWA4ubz0HG5piWif2sNySzPOUBFj7hdtlgHOV+XKp9gyFcEk/69+51Q/APpNPGoIvXszkgDTxf3+sW1E079uvaPe9q7gFb2+A5ezgpedzgKhp7QuJAqGjvlbbiDfLnJXtfRyiAm6ijoyr5EcJ+7NM3y99ImWbdYKW7yI6/2WEAA/vfra3n5QEE07sV5CP/+u1/8wx/qivHfkYEg1qhc/9URtPisTp59fvLjYco/UTeO11Yc//l9IVUFF8/0r+GKTBPt7Ide3rPg8Qi0qcSRj7XnGpgC5dr8C/e4x95fET3Mo5UiIvSwPq2rhkDjFTBs6oZ5SWX9Ke3T4SrOUm9HbRVhBTel+l6Koe+hyXljShK3OvWNCzWDu5tJE/vFCUOQcSRcTuIOUHQ8AC7VQI92hK8RZo17WryItz8buDUisZYVRfM4UFA52uAZJOPiBIBcTy6SnA6qwTyAXTAf1qw8cp2t56z2ZByzZwkOq5R4ke8d/hsG48RBejYo86DUvpEPUuHIdSxiUgmy4YF9nzS2mo/bxXOfB83LIN1Ara1Azci48Pz1q7q/JR7cM1iuti8K+i9yz1Us/hOF17KiLu43PvApGmzOFY6RfDlJLNAWD/okX+cs0H0H1PXVyJU0WurFXNjDJ5mWQZmkqJgxV+fcdH1oJw1fOv1f7Z5OT5OdnsZsPwOGRxNTBwH/p3srgCA9Wj3S7/71k9oltB70Te3m1LUGfOcerRLNH1QNldsZEljAdyCccEX+WqvpTLxxHB+P9D7yD0T+NhpX8YK67X7R04Zk2kILQuWiCa8/7oL1I4iJUXiwi7yBa6z8d8dDfTL5gLVvjh0Uw3GYbfWuTZh2RHbEOvJwXX3muDvAir8/Xv+EJrJj1nNwS32zqq9SSVbdCE6/Rs2fDTc4itFL3hJ59+ekGw1j/XHXWeXMNDZDQkFRomTYKqBf9d/O4dnYUsz2yk1m5Rr1OCDqpjF19q85X6YqNXFyX3Anjl7ds4BQ/AsGsQQ1M+zRcACOAosXDJIrzqZb+vs8nUqabSUwheipQ1yEyYI8qgAQpC3xTGSYRNlVpFPcUV56DWiQuUd3wCZ7MuPyuoqdwSxo0/WN1CZ20OxgpfCJAJWgk9hJkN5NtqHGjDf0hpalWK77KJqkrc9i0Xtwcvj9AeAzb0zrHcHgxM+O6RvYN23NnCwxVwOY6ycA7wvh+1LfdgOjBvGl4gVYXA0C9ho1meE3Cc2/YlCbVecGMm+Jm9xbdha4ZdAc0bKIXaWAZ7EGUt8Q483ur60iin1WfWObiA43jTghcgwnOzMcQBB5OQLQkYbiVwLj4azNSL9OUKzj+GNxLKt9XZnAVkkr8L2+SUIcE9b6qjKG/GW3ldnB8Q2OwRPnkCzs9Z9UO+Bq05056yWhTzEoeWqb8lMt2hBVZPn591gm3m39TLTMKGfnNhs/8Jfm6dCaTqpqAmd7yCfklyd6CcbU0F+6BQS8N2gL/fjbcanMAmtF7HNP7HP3WwiE24I4nhAE9FC0altPN/LLwICODc76Q3OCAAAA" alt="">
+                                    </div>
+                                <div>
+                                    <a href="single-blog.html">
+                                        <h3 class="text-[16px] font-semibold">From life was you fish...</h3>
+                                        </a>
+                                        <p class="text-[14px] text-gray-500">02 Hours ago</p>
+                                </div>
+                            </div>
+                                <!-- post item -->
+
+                                <!-- post item -->
+                                <div class="flex flex-row gap-4 mb-4 hover:text-indigo-600 transition ease-in-out duration-500">
+                                    <div>
+                                        <img class="w-20" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                                    </div>
+                                <div>
+                                    <a href="single-blog.html">
+                                        <h3 class="text-[16px] font-semibold">From life was you fish...</h3>
+                                        </a>
+                                        <p class="text-[14px] text-gray-500">02 Hours ago</p>
+                                </div>
+                            </div>
+                                <!-- post item -->
+
+                                <!-- post item -->
+                                <div class="flex flex-row gap-4 mb-4 hover:text-indigo-600 transition ease-in-out duration-500">
+                                    <div>
+                                        <img class="w-20" src="data:image/webp;base64,UklGRqADAABXRUJQVlA4IJQDAABQEgCdASpkADwAPm00l0ekIyIhJIoAgA2JZAZ71R5F+Rd7x+OXss2h+4fh31O6U9Ab6M/Et6Y/mA3QD/EdRzz63s7/uQw59wcsjSdzTfIBqC9JIgs6EguDtjf0XemWT79ByfheBcTaTEWpJwswV4LIfkzUmUzAJsJxWYyF53n48LTbQ0R/e5R9vrgyAOM0WAgXmOr+aghg3gXyAAD++N1f/9xj+xj+xj4kf/e5S3na01UUpKL4IEEnQ9CZtvFNkIudfY9Jz4Y0RzZ6+eCLs74/49+qTzkQEIl0fFE1TN5UpQHlsN163+qKoVGjOrxs8bNi5fvKdzkf/CTtNMj/d9CjzWKHdWsVS0zDgwdERSQizLy6j/ZlHQNNE6+W+s1jDzB+nRxCXCvdV4pwK+4FbTrLp7on/rXiSSh6iVrfAGr2SrzMZtzhwFwCsLKKUgDymxTvtB6luvh/4GPV4sZ0/JSfTVF9ahDP+ht4FTVZjuB7+91ElKb5dg3LT254qqA7j8T1GnGjnyp/SshNXOE3Xrt9+TTGnL9Zhu1aVMlUsEaKlYomS1hQN/Dd6dkVtM8yLBk+BXrIMTS6RUz8XY5wnKfBN80NY+2he6f/mfcSH3zX3glsHC53fvm1pXysXSZTj9Lz88mOu4w45HuxjQuDP3vkESmNQ4nbOIG8JAoEGCiVr4c/zxZ0ScLwLoT17sgqWHwwj/tLqBE4E0kHJio4z76tBnbjhXzOUlk31ORwSKFuY2+dv/0Ls0RuCwVDjflrUY3XULe0F3FWZu088gJNVj+ejpOGgN/CbAb0fIScsmmvSy5Ccc6GMBftTTOSV/d2jYizDmmTjXsxgDy09VEs08QnsZiI5KKs/UX72smvN/ZvZ5gTu4Aejj7Z1YaV9ZXG3AD1e/kNVS16nIvZ4XJYf5KWsKfd2eX/+x4yz7Vvz1i6WfhXx4WZ8pNZ7qS/jNrP/tYeVOQ9bqylTnqlUaC/D5B821mVtaCFEF45/dJcFKDfrFo9JRqirZitnog9DlNNN/bgp7p6LptJ8BfHLeWRj25Yt9nYy5K/fdmnkND5IFJRNrFu/kmHJiapndIf7o8P2toDWu7eiseZZk0dnFulsaXgCa/CXDgWNIyxMG7yd7uTlHCTWlW6ADIQtWlk9pEtAYqQxor9kjz74okcwDMQEIQ6Y/PHh7dmLedmJuDFxfu4pNNJgAJopQXxcP6/D/9DEXJCDAAA" alt="">
+                                    </div>
+                                <div>
+                                    <a href="single-blog.html">
+                                        <h3 class="text-[16px] font-semibold">From life was you fish...</h3>
+                                        </a>
+                                        <p class="text-[14px] text-gray-500">02 Hours ago</p>
+                                </div>
+                            </div>
+                                <!-- post item -->
+                            </div>
+                            <!-- post -->
+                        </div>
+
+
+                        <!-- popular posts -->
+
+                        <hr class="h-0.5 mx-2 mb-4 overflow-hidden">
 
                         <!-- category -->
                         <div class="p-2">
@@ -253,27 +617,27 @@
                       
 
                             <ul class="mt-4">
-                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 hover border-dotted  cursor-pointer p-1 border-b-2  pb-2">
+                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 border-dotted hover:border-indigo-500  cursor-pointer p-1 border-b-2  pb-2">
                                     <a href="" class="capitalize text-sm">Web Design</a>
                                     <span>( 15 )</span>
                                 </li>
-                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 hover border-dotted  cursor-pointer p-1 border-b-2  pb-2">
+                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 border-dotted hover:border-indigo-500  cursor-pointer p-1 border-b-2  pb-2">
                                     <a href="" class="capitalize text-sm">web development</a>
                                     <span>( 5 )</span>
                                 </li>
-                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 hover border-dotted  cursor-pointer p-1 border-b-2  pb-2">
+                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 border-dotted hover:border-indigo-500  cursor-pointer p-1 border-b-2  pb-2">
                                     <a href="" class="capitalize text-sm">php</a>
                                     <span>( 25 )</span>
                                 </li>
-                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 hover border-dotted  cursor-pointer p-1 border-b-2  pb-2">
+                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 border-dotted hover:border-indigo-500  cursor-pointer p-1 border-b-2  pb-2">
                                     <a href="" class="capitalize text-sm">laravel</a>
                                     <span>( 10 )</span>
                                 </li>
-                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 hover border-dotted  cursor-pointer p-1 border-b-2  pb-2">
+                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 border-dotted hover:border-indigo-500  cursor-pointer p-1 border-b-2  pb-2">
                                     <a href="" class="capitalize text-sm">wordpress</a>
                                     <span>( 50 )</span>
                                 </li>
-                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 hover border-dotted  cursor-pointer p-1 border-b-2  pb-2 last:border-b-0">
+                                <li class="flex justify-between items-center text-gray-500 text-sm hover:text-indigo-600 border-dotted hover:border-indigo-500  cursor-pointer p-1 border-b-2  pb-2">
                                     <a href="" class="capitalize text-sm">ui/ux</a>
                                     <span>( 150 )</span>
                                 </li>
@@ -285,75 +649,55 @@
                         <!-- category -->
 
                         <!-- recent post -->
-                        <div class="bg-gray-100 p-4 mt-6">
-                            <h2 class="capitalize pb-2 text-lg">recent post</h2>
-                            <hr>
-
-                            <!-- post -->
-                            <div class="flex-col mt-4">
-                                <!-- post item -->
-                                <div class="flex flex-row gap-2 justify-between mb-4 hover:text-indigo-600 transition ease-in-out duration-300">
-                                    <div>
-                                        <img class="w-12 h-12" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                    </div>
-                                <div>
-                                    <a href="single-blog.html">
-                                        <h3 class="text-[16px]">From life was you fish...</h3>
-                                        </a>
-                                        <p class="text-[14px] text-gray-500">January 12, 2019</p>
-                                </div>
-                              </div>
-                                <!-- post item -->
-
-                                <!-- post item -->
-                                <div class="flex flex-row gap-2 justify-between mb-4 hover:text-indigo-600 transition ease-in-out duration-300">
-                                    <div>
-                                        <img class="w-12 h-12" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                    </div>
-                                <div>
-                                    <a href="single-blog.html">
-                                        <h3 class="text-[16px]">From life was you fish...</h3>
-                                        </a>
-                                        <p class="text-[14px] text-gray-300">January 12, 2019</p>
-                                </div>
-                              </div>
-                                <!-- post item -->
-
-                                <!-- post item -->
-                                <div class="flex flex-row gap-2 justify-between last:mb-0 hover:text-indigo-600 transition ease-in-out duration-300">
-                                    <div>
-                                        <img class="w-12 h-12" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                                    </div>
-                                <div>
-                                    <a href="single-blog.html">
-                                        <h3 class="text-[16px]">From life was you fish...</h3>
-                                        </a>
-                                        <p class="text-[14px] text-gray-300">January 12, 2019</p>
-                                </div>
-                              </div>
-                                <!-- post item -->
-                            </div>
-                            <!-- post -->
-
-                        </div>
+                      
                         <!-- recent post -->
 
                         <!-- tag -->
-                        <div class="bg-gray-400 p-4 mt-6">
-                            <h2 class="pb-2">Tag List</h2>
+
+                        <div class="p-2">
+                            <h4 class="bg-indigo-400 p-2 text-white text-center">Tag List</h4>
                             <hr>
                             <ul class="flex flex-wrap gap-2 mt-4">
-                                <li class="hover:bg-gray-600 px-1 py-2 capitalize border-2 text-sm mb-2"><a class="block" href="">technology</a></li>
-                                <li class="hover:bg-gray-600 px-1 py-2 capitalize border-2 text-sm mb-2"><a class="block" href="">travel</a></li>
-                                <li class="hover:bg-gray-600 px-1 py-2 capitalize border-2 text-sm mb-2"><a class="block" href="">project</a></li>
-                                <li class="hover:bg-gray-600 px-1 py-2 capitalize border-2 text-sm mb-2"><a class="block" href="">resturent</a></li>
-                                <li class="hover:bg-gray-600 px-1 py-2 capitalize border-2 text-sm mb-2"><a class="block" href="">life style</a></li>
-                                <li class="hover:bg-gray-600 px-1 py-2 capitalize border-2 text-sm mb-2"><a class="block" href="">design</a></li>
+                                <li class="bg-white hover:bg-indigo-500 hover:text-white h-6 px-1 py-1 capitalize text-xs text-gray-700"><a class="block " href="">technology</a></li>
+                                <li class="bg-white hover:bg-indigo-500 hover:text-white h-6 px-1 py-1 capitalize text-xs text-gray-700"><a class="block" href="">fashon in life</a></li>
+                                <li class="bg-white hover:bg-indigo-500 hover:text-white h-6 px-1 py-1 capitalize text-xs text-gray-700"><a class="block" href="">travel</a></li>
+                                <li class="bg-white hover:bg-indigo-500 hover:text-white h-6 px-1 py-1 capitalize text-xs text-gray-700"><a class="block" href="">project</a></li>
+                                <li class="bg-white hover:bg-indigo-500 hover:text-white h-6 px-1 py-1 capitalize text-xs text-gray-700"><a class="block" href="">resturent</a></li>
+                                <li class="bg-white hover:bg-indigo-500 hover:text-white h-6 px-1 py-1 capitalize text-xs text-gray-700"><a class="block" href="">life style</a></li>
+                                <li class="bg-white hover:bg-indigo-500 hover:text-white h-6 px-1 py-1 capitalize text-xs text-gray-700"><a class="block" href="">design</a></li>
                             </ul>
-
-
+                            
+                           
                         </div>
+
+                        
                         <!-- tag -->
+
+                        <!-- newsletter -->
+
+                      
+                        <div class="p-2 mt-4">
+                            <h4 class="bg-indigo-400 p-2 text-white text-center uppercase">newsletter</h4>
+                            <p class="text-xs text-gray-600 p-2 text-center">Here, I focus on a range of items and features that we use in life without giving them a second thought.</p>
+                            <form action="">
+                                <div class="relative flex">
+                                    <span class="absolute px-2 py-2 text-gray-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                      </svg>
+                                    </span>
+                                <input type="text" name="" class="w-9/12  px-9 py-1 focus:outline-none text-xs" placeholder="Enter Email...">
+                                <a href="" class="bg-indigo-500 text-xs py-3 uppercase p-1 hover:bg-indigo-400 transition duration-500 hover:text-white">subscribe</a>
+                                </div>
+
+                            </form>
+
+                            
+                            <p class="text-xs text-center pt-4">You can unsubscribe at any time</p>
+                        </div>
+                        <!-- newsletter -->
+
+                        <hr>
 
                     </div>
                 <!-- sidebar -->
@@ -363,545 +707,13 @@
          
       <!-- Post Area start -->
 
-      <div class="flex flex-col items-center justify-between gap-4">
-
-        <!-- post items -->
-
-        <div class="w-1/3 rounded-xl overflow-hidden single_post cursor-pointer">
-            <!-- img -->
-            <div class="overflow-hidden">
-              <img
-                src="img/06.jpg"
-                alt=""
-                class="transition post_img duration-500"
-              />
-            </div>
-            <!-- img -->
-            <!-- post content -->
-            <div class="">
-              <!-- overly -->
-              <div class="flex justify-between items-center">
-                <!-- img -->
-                <div class="w-10 h-10 pt-2">
-                  <img
-                    src="https://preview.colorlib.com/theme/personal/img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp"
-                    alt=""
-                  />
-                </div>
-                <!-- img -->
-                <!-- user -->
-                <div class="flex items-center mt-2">
-                  <span class="pr-4 text-[14px] from-neutral-300"
-                    >13th Dec 2022</span
-                  >
-                 
-                    <span class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="w-4 h-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="pr-3 pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                      >15</span
-                    >
-             
-                    <span class="">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-4 h-4"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                        >04</span>
-                </div>
-                <!-- user -->
-              </div>
-              <!-- overly -->
-              <hr class="bg-gray-200 mt-2 w-full block" />
-            </div>
-            <!-- post content -->
-
-            <!-- post details -->
-            <div class="mt-4 mb-2">
-              <h2 class="font-bold text-black text-[25px] post_title">
-                BREAK THROUGH SELF DOUBT AND FEARfdfvdsgdsgdfgdfg
-              </h2>
-              <p class="text-gray-500 pt-2 text-sm">
-                Dream interpretation has many forms; it can be done be done
-                for the sake of fun, hobby or can be taken up as a serious
-                career.
-              </p>
-            </div>
-            <!-- post details -->
-          </div>
-
-          <div class="w-1/3 rounded-xl overflow-hidden single_post cursor-pointer">
-            <!-- img -->
-            <div class="overflow-hidden">
-              <img
-                src="img/06.jpg"
-                alt=""
-                class="transition duration-500 post_img"
-              />
-            </div>
-            <!-- img -->
-            <!-- post content -->
-            <div class="">
-              <!-- overly -->
-              <div class="flex justify-between items-center">
-                <!-- img -->
-                <div class="w-10 h-10 pt-2">
-                  <img
-                    src="https://preview.colorlib.com/theme/personal/img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp"
-                    alt=""
-                  />
-                </div>
-                <!-- img -->
-                <!-- user -->
-                <div class="flex items-center mt-2">
-                  <span class="pr-4 text-[14px] from-neutral-300"
-                    >13th Dec 2022</span
-                  >
-                 
-                    <span class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="w-4 h-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="pr-3 pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                      >15</span
-                    >
-             
-                    <span class="">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-4 h-4"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                        >04</span>
-                </div>
-                <!-- user -->
-              </div>
-              <!-- overly -->
-              <hr class="bg-gray-200 mt-2 w-full block" />
-            </div>
-            <!-- post content -->
-
-            <!-- post details -->
-            <div class="mt-4 mb-2">
-              <h2 class="font-bold text-black text-[25px] post_title">
-                BREAK THROUGH SELF DOUBT AND FEARfdfvdsgdsgdfgdfg
-              </h2>
-              <p class="text-gray-500 pt-2 text-sm">
-                Dream interpretation has many forms; it can be done be done
-                for the sake of fun, hobby or can be taken up as a serious
-                career.
-              </p>
-            </div>
-            <!-- post details -->
-          </div>
-
-          <div class="w-1/3 rounded-xl overflow-hidden single_post cursor-pointer">
-            <!-- img -->
-            <div class="overflow-hidden">
-              <img
-                src="img/06.jpg"
-                alt=""
-                class="transition duration-500 post_img"
-              />
-            </div>
-            <!-- img -->
-            <!-- post content -->
-            <div class="">
-              <!-- overly -->
-              <div class="flex justify-between items-center">
-                <!-- img -->
-                <div class="w-10 h-10 pt-2">
-                  <img
-                    src="https://preview.colorlib.com/theme/personal/img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp"
-                    alt=""
-                  />
-                </div>
-                <!-- img -->
-                <!-- user -->
-                <div class="flex items-center mt-2">
-                  <span class="pr-4 text-[14px] from-neutral-300"
-                    >13th Dec 2022</span
-                  >
-                 
-                    <span class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="w-4 h-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="pr-3 pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                      >15</span
-                    >
-             
-                    <span class="">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-4 h-4"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                        >04</span>
-                </div>
-                <!-- user -->
-              </div>
-              <!-- overly -->
-              <hr class="bg-gray-200 mt-2 w-full block" />
-            </div>
-            <!-- post content -->
-
-            <!-- post details -->
-            <div class="mt-4 mb-2">
-              <h2 class="font-bold text-black text-[25px] post_title">
-                BREAK THROUGH SELF DOUBT AND FEARfdfvdsgdsgdfgdfg
-              </h2>
-              <p class="text-gray-500 pt-2 text-sm">
-                Dream interpretation has many forms; it can be done be done
-                for the sake of fun, hobby or can be taken up as a serious
-                career.
-              </p>
-            </div>
-            <!-- post details -->
-          </div>
-
-          <div class="w-1/3 rounded-xl overflow-hidden single_post cursor-pointer">
-            <!-- img -->
-            <div class="overflow-hidden">
-              <img
-                src="img/06.jpg"
-                alt=""
-                class="transition duration-500 post_img"
-              />
-            </div>
-            <!-- img -->
-            <!-- post content -->
-            <div class="">
-              <!-- overly -->
-              <div class="flex justify-between items-center">
-                <!-- img -->
-                <div class="w-10 h-10 pt-2">
-                  <img
-                    src="https://preview.colorlib.com/theme/personal/img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp"
-                    alt=""
-                  />
-                </div>
-                <!-- img -->
-                <!-- user -->
-                <div class="flex items-center mt-2">
-                  <span class="pr-4 text-[14px] from-neutral-300"
-                    >13th Dec 2022</span
-                  >
-                 
-                    <span class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="w-4 h-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="pr-3 pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                      >15</span
-                    >
-             
-                    <span class="">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-4 h-4"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                        >04</span>
-                </div>
-                <!-- user -->
-              </div>
-              <!-- overly -->
-              <hr class="bg-gray-200 mt-2 w-full block" />
-            </div>
-            <!-- post content -->
-
-            <!-- post details -->
-            <div class="mt-4 mb-2">
-              <h2 class="font-bold text-black text-[25px] post_title">
-                BREAK THROUGH SELF DOUBT AND FEARfdfvdsgdsgdfgdfg
-              </h2>
-              <p class="text-gray-500 pt-2 text-sm">
-                Dream interpretation has many forms; it can be done be done
-                for the sake of fun, hobby or can be taken up as a serious
-                career.
-              </p>
-            </div>
-            <!-- post details -->
-          </div>
-
-          <div class="w-1/3 rounded-xl overflow-hidden single_post cursor-pointer">
-            <!-- img -->
-            <div class="overflow-hidden">
-              <img
-                src="img/06.jpg"
-                alt=""
-                class="transition duration-500 post_img"
-              />
-            </div>
-            <!-- img -->
-            <!-- post content -->
-            <div class="">
-              <!-- overly -->
-              <div class="flex justify-between items-center">
-                <!-- img -->
-                <div class="w-10 h-10 pt-2">
-                  <img
-                    src="https://preview.colorlib.com/theme/personal/img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp"
-                    alt=""
-                  />
-                </div>
-                <!-- img -->
-                <!-- user -->
-                <div class="flex items-center mt-2">
-                  <span class="pr-4 text-[14px] from-neutral-300"
-                    >13th Dec 2022</span
-                  >
-                 
-                    <span class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="w-4 h-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="pr-3 pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                      >15</span
-                    >
-             
-                    <span class="">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-4 h-4"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                        >04</span>
-                </div>
-                <!-- user -->
-              </div>
-              <!-- overly -->
-              <hr class="bg-gray-200 mt-2 w-full block" />
-            </div>
-            <!-- post content -->
-
-            <!-- post details -->
-            <div class="mt-4 mb-2">
-              <h2 class="font-bold text-black text-[25px] post_title">
-                BREAK THROUGH SELF DOUBT AND FEARfdfvdsgdsgdfgdfg
-              </h2>
-              <p class="text-gray-500 pt-2 text-sm">
-                Dream interpretation has many forms; it can be done be done
-                for the sake of fun, hobby or can be taken up as a serious
-                career.
-              </p>
-            </div>
-            <!-- post details -->
-          </div>
-
-          <div class="w-1/3 rounded-xl overflow-hidden single_post cursor-pointer">
-            <!-- img -->
-            <div class="overflow-hidden">
-              <img
-                src="img/06.jpg"
-                alt=""
-                class="transition duration-500 post_img"
-              />
-            </div>
-            <!-- img -->
-            <!-- post content -->
-            <div class="">
-              <!-- overly -->
-              <div class="flex justify-between items-center">
-                <!-- img -->
-                <div class="w-10 h-10 pt-2">
-                  <img
-                    src="https://preview.colorlib.com/theme/personal/img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp"
-                    alt=""
-                  />
-                </div>
-                <!-- img -->
-                <!-- user -->
-                <div class="flex items-center mt-2">
-                  <span class="pr-4 text-[14px] from-neutral-300"
-                    >13th Dec 2022</span
-                  >
-                 
-                    <span class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="w-4 h-4"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                        />
-                      </svg>
-                    </span>
-                    <span
-                      class="pr-3 pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                      >15</span
-                    >
-             
-                    <span class="">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          class="w-4 h-4"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="pl-0.5 text-[16px] from-neutral-300 text-gray-700"
-                        >04</span>
-                </div>
-                <!-- user -->
-              </div>
-              <!-- overly -->
-              <hr class="bg-gray-200 mt-2 w-full block" />
-            </div>
-            <!-- post content -->
-
-            <!-- post details -->
-            <div class="mt-4 mb-2">
-              <h2 class="font-bold text-black text-[25px] post_title">
-                BREAK THROUGH SELF DOUBT AND FEARfdfvdsgdsgdfgdfg
-              </h2>
-              <p class="text-gray-500 pt-2 text-sm">
-                Dream interpretation has many forms; it can be done be done
-                for the sake of fun, hobby or can be taken up as a serious
-                career.
-              </p>
-            </div>
-            <!-- post details -->
-          </div>
-
-        <!-- post items -->
-      </div>
+      
       
       <!-- Post Area End -->
     </div>
   </section>
 <!-- blog area end -->
+
 
 
 
@@ -1045,8 +857,7 @@
 
      $(document).ready(function () {
         $(window).on("scroll", function () {
-          //if you hard code, then use console
-          //.log to determine when you want the
+            
           //nav bar to stick.
           var scroll = $(window).scrollTop();
           if (scroll < 150) {
