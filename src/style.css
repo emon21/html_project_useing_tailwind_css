@@ -6,4 +6,17 @@
   .text {
     @apply text-white text-3xl pb-2;
   }
+  nav{
+    @apply fixed inset-x-0 z-10 py-8 transition duration-300
+  }
+}
+
+@layer base{
+    body{
+        @apply bg-[#212121];
+    }
+
+    section{
+        @apply py-20
+    }
 }

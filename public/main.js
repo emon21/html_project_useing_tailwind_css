@@ -200,8 +200,7 @@ $('.testimonial').slick({
             // }
         });
     
-
-
+       
       
 
 /* scroll to fixed top menu */
